@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": ["christopherknewton.com"],
   "builds": [
     { "src": "index.html", "use": "@now/static" }
   ]
