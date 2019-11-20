@@ -2,6 +2,11 @@
   "version": 2,
   "alias": ["christopherknewton.com"],
   "builds": [
-    { "src": "index.html", "use": "@now/static" }
+    { "src": "/index.js", "use": "@now/node" },
+    { "src": "/index.css", "use": "@now/static" }
+  ],
+  "routes" : [
+    { "handle": "filesystem" },
+    { "src": "/", "dest": "/index.js" }
   ]
 }

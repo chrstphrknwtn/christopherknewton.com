@@ -1,0 +1,44 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 3rem;
+  font-family: BlinkMacSystemFont, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  font-feature-settings: 'tnum';
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background:  #1a1a1a;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
