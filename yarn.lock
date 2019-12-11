@@ -2,7 +2,12 @@
 # yarn lockfile v1
 
 
-ragtag@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.1.tgz#9a7f05aa9ba71348ecc1232588ccaae762ca1b07"
-  integrity sha512-Y9OiVvB6pfnRK0St9uQ3WXU+ZrB7y8veow2HD12J2P+/VhZeynsWL1CARiGBCGR/zcgmjU1+qDXP27eUHw0hgg==
+copyright@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/copyright/-/copyright-0.0.2.tgz#b97924f6b166fbcefd738ff86ad0ab8f4c59bcfb"
+  integrity sha512-2mt105YFLrNA7CS69ppoha//V6qzGW4vnq2857uGbpKieEu7AEZXBsV6MEOS9TIaAeTdLPu5RSEHsi5iaW5ehg==
+
+ragtag@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.2.tgz#c14234a0b4d9773365d72d1544d2a5e3823b2527"
+  integrity sha512-9WHHoAs3FQ6pMQGQjhXeO9kfZx5kJcRJq5oOtbvWbUvthR3BzCatt4wlbRQqfrn27+NYePOmR+GjPTGC1lE54Q==

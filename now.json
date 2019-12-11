@@ -3,10 +3,12 @@
   "alias": ["christopherknewton.com"],
   "builds": [
     { "src": "/index.js", "use": "@now/node" },
+    { "src": "/work.js", "use": "@now/node" },
     { "src": "/index.css", "use": "@now/static" }
   ],
   "routes" : [
     { "handle": "filesystem" },
-    { "src": "/", "dest": "/index.js" }
+    { "src": "/", "dest": "/index.js" },
+    { "src": "(?<slug>[^/]*)", "dest": "/work.js?slug=$slug" }
   ]
 }

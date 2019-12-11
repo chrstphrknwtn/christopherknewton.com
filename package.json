@@ -6,6 +6,7 @@
   "author": "Christopher Newton <christopher.k.newton@me.com>",
   "private": true,
   "dependencies": {
-    "ragtag": "^0.0.1"
+    "copyright": "^0.0.2",
+    "ragtag": "^0.0.2"
   }
 }

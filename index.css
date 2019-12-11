@@ -10,27 +10,49 @@ body {
   margin: 0;
   padding: 3rem;
   font-family: BlinkMacSystemFont, -apple-system, sans-serif;
-  line-height: 1.5;
+  line-height: 1.6;
   color: black;
   background-color: white;
-  font-feature-settings: 'tnum';
+  font-feature-settings: 'tnum' 1, 'liga' 0;
+}
+
+@media (min-width: 480px) {
+  body {
+    padding: 5rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: white;
-    background:  #1a1a1a;
+    background:  #010101;
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl {
   margin: 0;
   font-size: 1rem;
   font-weight: normal;
 }
 
-h1 {
+h1, h2 {
+  font-weight: 600;
   margin-bottom: 1rem;
+}
+
+h1 + h2,
+p + h2,
+ul + h2,
+dl + h2 {
+  margin-top: 3rem;
+}
+
+p {
+  max-width: 32rem;
+}
+
+p + p {
+  text-indent: 2rem;
 }
 
 ul {
@@ -39,6 +61,25 @@ ul {
   padding: 0;
 }
 
+dt {
+  font-weight: 600;
+}
+
+dd {
+  margin-left: 0;
+  text-indent: 2rem;
+}
+
 a {
   color: inherit;
+}
+
+a:hover {
+  color: #e10000;
+}
+
+header,
+main,
+footer {
+  margin-bottom: 6rem;
 }
