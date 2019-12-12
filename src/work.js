@@ -3,11 +3,22 @@ import ragtag from 'ragtag';
 import { works } from './data';
 import layout from './layout';
 
-const Work = ({ title, year }) => ragtag`
-<dl>
-  <dt>${year}</dt>
-  <dd>${title}</dd>
-</dl>
+const Work = ({ title, year, images = [] }) => ragtag`
+<section>
+  <dl>
+    <dt>${title}</dt>
+    <dd>${year}</dd>
+  </dl>
+</section>
+<section>
+  ${images.map(image => ragtag`
+    <figure>
+      <div class="img-frame">
+        <img src="/images/${image.src}" alt=${image.alt} />
+      </div>
+    </figure>
+  `)}
+</section>
 `;
 
 export default (req, res) => {

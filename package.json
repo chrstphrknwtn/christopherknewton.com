@@ -7,6 +7,6 @@
   "private": true,
   "dependencies": {
     "copyright": "^0.0.2",
-    "ragtag": "^0.0.2"
+    "ragtag": "^0.0.5"
   }
 }

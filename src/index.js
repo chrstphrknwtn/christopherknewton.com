@@ -4,18 +4,20 @@ import { works, qualifications, awards, groups, links } from './data';
 import layout from './layout';
 
 const content = ragtag`
-<h2>Work</h2>
-<dl>
-  ${works.map(w => ragtag`
-    <dt>${w.year}</dt>
-    <dd><a href="/${w.slug}">${w.title}</a></dd>
-  `)}
-</dl>
+${works.length > 0 && ragtag`
+  <h2>Work</h2>
+  <dl>
+    ${works.map(w => ragtag`
+      <dt>${w.year}</dt>
+      <dd><a href="/${w.slug}">${w.title}</a></dd>
+    `)}
+  </dl>
+`}
 
 <h2>Information</h2>
-<p>I make photographs for reasons that are not totally clear to me.</p>
-<p>Born in Melbourne in 1981, I spent a good portion of the late 1990s and early 2000s in darkrooms. In 2018 I returned to making photographs after thirteen years working as a graphic designer.</p>
-<p>I now live and work between Melbourne and Berlin.</p>
+<p>Born in Melbourne in 1981, I spent a good portion of the late 1990s and early 2000s in darkrooms.</p>
+<p>In 2018 I returned to making photographs after fifteen years working as a designer and developer in Australia, Europe and North America.</p>
+<p>I now live and work in Melbourne and Berlin.</p>
 
 <h2>Education</h2>
 <dl>
@@ -41,7 +43,16 @@ const content = ragtag`
   `)}
 </dl>
 
-<h2>Links</h2>
+<h2>Contact</h2>
+<p><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></p>
+<p>
+  PO Box 4063<br />
+  Fitzroy VIC 3065<br />
+  Australia
+</p>
+
+
+<h2>Other</h2>
 <ul>
   ${links.map(link => ragtag`<li><a target="_blank" href="${link.url}">${link.title}</a></li>`)}
 </ul>

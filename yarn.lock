@@ -7,7 +7,7 @@ copyright@^0.0.2:
   resolved "https://registry.yarnpkg.com/copyright/-/copyright-0.0.2.tgz#b97924f6b166fbcefd738ff86ad0ab8f4c59bcfb"
   integrity sha512-2mt105YFLrNA7CS69ppoha//V6qzGW4vnq2857uGbpKieEu7AEZXBsV6MEOS9TIaAeTdLPu5RSEHsi5iaW5ehg==
 
-ragtag@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.2.tgz#c14234a0b4d9773365d72d1544d2a5e3823b2527"
-  integrity sha512-9WHHoAs3FQ6pMQGQjhXeO9kfZx5kJcRJq5oOtbvWbUvthR3BzCatt4wlbRQqfrn27+NYePOmR+GjPTGC1lE54Q==
+ragtag@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.5.tgz#c134c3756f96685d0a376b56cfbb56dfd2435c14"
+  integrity sha512-w7rb73euD+eUHOa4vcdoDWqAb/Rvot004A88S1GX+VY9aYLimkG5PubMhuqesLCeidYtBUqMZPneIJON/8L1cw==

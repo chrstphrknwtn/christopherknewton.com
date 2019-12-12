@@ -4,7 +4,8 @@
   "builds": [
     { "src": "/src/index.js", "use": "@now/node" },
     { "src": "/src/work.js", "use": "@now/node" },
-    { "src": "/src/index.css", "use": "@now/static" }
+    { "src": "/src/index.css", "use": "@now/static" },
+    { "src": "/images/**/*", "use": "@now/static" }
   ],
   "routes" : [
     { "handle": "filesystem" },
