@@ -14,8 +14,7 @@ const content = ragtag`
 
 <h2>Information</h2>
 <p>I make photographs for reasons that are not totally clear to me.</p>
-<p>Born in Melbourne in 1981, I spent a good portion of the late 1990s and early 2000s in darkrooms.</p>
-<p>In 2018 I returned to making photographs after thirteen years working as a graphic designer.</p>
+<p>Born in Melbourne in 1981, I spent a good portion of the late 1990s and early 2000s in darkrooms. In 2018 I returned to making photographs after thirteen years working as a graphic designer.</p>
 <p>I now live and work between Melbourne and Berlin.</p>
 
 <h2>Education</h2>

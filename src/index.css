@@ -70,12 +70,8 @@ dd {
   text-indent: 2rem;
 }
 
-a {
-  color: inherit;
-}
-
-a:hover {
-  color: #e10000;
+header a {
+  text-decoration: none;
 }
 
 header,

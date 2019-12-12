@@ -14,7 +14,7 @@ const layout = ({ title = 'Christopher Newton', content = '' }) => {
     </head>
     <body>
       <header>
-        <h2>Christopher Newton</h2>
+        <h2><a href="/">Christopher Newton</a></h2>
       </header>
 
       <main>${content}</main>
