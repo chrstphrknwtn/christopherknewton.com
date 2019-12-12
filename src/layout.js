@@ -1,8 +1,8 @@
 import ragtag from 'ragtag';
 import c from 'copyright';
 
-const layout = ({ title = 'Christopher Newton', content = '' }) => {
-  return ragtag`
+const layout = ({title = 'Christopher Newton', content = ''} = {}) => {
+	return ragtag`
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -31,11 +31,11 @@ const layout = ({ title = 'Christopher Newton', content = '' }) => {
       </main>
 
       <footer>
-        <p>${c({name:'Christopher Newton', startYear: 1981, short: true})}</p>
+        <p>${c({name: 'Christopher Newton', startYear: 1981, short: true})}</p>
       </footer>
     </body>
   </html>
   `;
-}
+};
 
 export default layout;

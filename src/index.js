@@ -1,6 +1,6 @@
 import ragtag from 'ragtag';
 
-import { works, qualifications, awards, groups, links } from './data';
+import {works, qualifications, awards, groups, links} from './data';
 import layout from './layout';
 
 const content = ragtag`
@@ -50,5 +50,5 @@ ${works.length > 0 && ragtag`
 `;
 
 export default (req, res) => {
-  res.send(layout({ }));
+	res.send(layout());
 };
