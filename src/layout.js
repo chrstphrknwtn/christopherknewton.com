@@ -17,7 +17,18 @@ const layout = ({ title = 'Christopher Newton', content = '' }) => {
         <h2><a href="/">Christopher Newton</a></h2>
       </header>
 
-      <main>${content}</main>
+      <main>
+        ${content}
+
+        <section>
+          <h2>Contact</h2>
+          <p><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></p>
+          <p>
+            PO Box 4063<br />
+            Fitzroy VIC 3065 Australia
+          </p>
+        </section>
+      </main>
 
       <footer>
         <p>${c({name:'Christopher Newton', startYear: 1981, short: true})}</p>

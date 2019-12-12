@@ -43,15 +43,6 @@ ${works.length > 0 && ragtag`
   `)}
 </dl>
 
-<h2>Contact</h2>
-<p><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></p>
-<p>
-  PO Box 4063<br />
-  Fitzroy VIC 3065<br />
-  Australia
-</p>
-
-
 <h2>Other</h2>
 <ul>
   ${links.map(link => ragtag`<li><a target="_blank" href="${link.url}">${link.title}</a></li>`)}
@@ -59,5 +50,5 @@ ${works.length > 0 && ragtag`
 `;
 
 export default (req, res) => {
-  res.send(layout({ content }));
+  res.send(layout({ }));
 };

@@ -78,8 +78,8 @@ footer {
   margin-bottom: 6rem;
 }
 
-main > section +  section {
-  margin-top: 5rem;
+main > section + section {
+  margin-top: 6rem;
 }
 
 figure {
