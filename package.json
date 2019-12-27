@@ -7,7 +7,7 @@
   "private": true,
   "dependencies": {
     "copyright": "^0.0.2",
-    "ragtag": "^0.0.5"
+    "ragtag": "^0.0.6"
   },
   "devDependencies": {
     "xo": "^0.25.3"

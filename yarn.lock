@@ -2546,10 +2546,10 @@ quick-lru@^1.0.0:
   resolved "https://registry.yarnpkg.com/quick-lru/-/quick-lru-1.1.0.tgz#4360b17c61136ad38078397ff11416e186dcfbb8"
   integrity sha1-Q2CxfGETatOAeDl/8RQW4Ybc+7g=
 
-ragtag@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.5.tgz#c134c3756f96685d0a376b56cfbb56dfd2435c14"
-  integrity sha512-w7rb73euD+eUHOa4vcdoDWqAb/Rvot004A88S1GX+VY9aYLimkG5PubMhuqesLCeidYtBUqMZPneIJON/8L1cw==
+ragtag@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ragtag/-/ragtag-0.0.6.tgz#009ae2865d471416279469cf1e00fe2baea55ce1"
+  integrity sha512-M3/+ofGHNrjxu1ugbrVE0sZuB2/Wfg1zBb78h1XA8oRmifn/L6VuUgMEu1r6ZN31fgAk+ET4/Cp4CWsJriabsA==
 
 rc@^1.2.8:
   version "1.2.8"
