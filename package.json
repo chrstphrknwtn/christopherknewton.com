@@ -11,5 +11,11 @@
   },
   "devDependencies": {
     "xo": "^0.25.3"
+  },
+  "xo": {
+    "space": true,
+    "rules": {
+      "object-curly-spacing": ["error", "always"]
+    }
   }
 }

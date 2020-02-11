@@ -1,0 +1,98 @@
+@import "https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 19px;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.4;
+  color: black;
+  background-color: white;
+  font-feature-settings: 'onum';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background:  #010101;
+  }
+
+  a {
+    color: skyblue;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h1, h2 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h3,
+.subhead {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-feature-settings: 'onum', 'smcp', 'c2sc';
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+mark {
+  background-color: #ffff33;
+}
+
+strong {
+  font-weight: 500;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  padding: 0;
+}
+
+main {
+  max-width: 30rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.site-header {
+  margin-bottom: 6rem;
+}
+
+.site-header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header h2 span {
+  font-weight: 400;
+}
