@@ -8,6 +8,7 @@
   "routes" : [
     { "handle": "filesystem" },
     { "src": "/", "dest": "/pages/index.js" },
+    { "src": "/post", "dest": "/pages/post.js" },
     { "src": "/(?<slug>[^/]*)", "dest": "/pages/project.js?slug=$slug" }
   ]
 }

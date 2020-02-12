@@ -21,11 +21,11 @@ const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } 
           <h2><a href="/">Christopher Newton</a>${!isIndex && '<span> · UI Developer</span>'}</h2>
           ${isIndex && introMarkup}
         </header>
-        <section>
+        <section class="site-content">
           ${content}
         </section>
-        <footer>
-          <p>${c({ name: 'Christopher Newton', startYear: 1981, short: true })}</p>
+        <footer class="site-footer">
+          <p>${c({ name: 'Christopher Newton', short: true })}</p>
         </footer>
       </main>
     </body>
