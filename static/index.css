@@ -1,5 +1,12 @@
 @import "https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css";
 
+:root {
+  --base-font-features: 'onum';
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 500;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -19,10 +26,10 @@ body {
   height: 100%;
   margin: 0 2rem;
   font-family: 'EB Garamond', serif;
-  line-height: 1.4;
+  line-height: 1.43;
   color: black;
   background-color: white;
-  font-feature-settings: 'onum';
+  font-feature-settings: var(--base-font-features);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,24 +49,26 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1rem;
-  font-weight: normal;
+  font-weight: var(--font-weight-regular);
 }
 
-h1, h2 {
-  font-weight: 500;
+h1, h2, h3 {
+  font-weight: var(--font-weight-bold);
 }
 
-h3,
 .subhead {
   display: block;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
-  font-feature-settings: 'onum', 'smcp', 'c2sc';
+  font-weight: var(--font-weight-regular);
+  font-feature-settings: var(--base-font-features), 'smcp', 'c2sc';
   letter-spacing: 0.05em;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
+  background-color: #f7f7f7;
 }
 
 a:hover {
@@ -67,7 +76,7 @@ a:hover {
 }
 
 dt {
-  font-weight: 500;
+  font-weight: var(--font-weight-bold);
 }
 
 dd {
@@ -80,7 +89,7 @@ mark {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: var(--font-weight-bold);
 }
 
 p {
@@ -107,6 +116,8 @@ ul > li:before {
   content: '·';
 }
 
+/* Layout */
+
 main {
   display: flex;
   flex-direction: column;
@@ -116,11 +127,13 @@ main {
   margin-left: auto;
 }
 
-/* Index */
-
 .site-header {
-  padding-top: 2rem;
-  margin-bottom: 6rem;
+  padding: 2rem 0 3rem 0;
+}
+
+.site-header h1,
+.site-header h2 {
+  margin-bottom: 0;
 }
 
 .site-header a {
@@ -129,7 +142,7 @@ main {
 }
 
 .site-header h2 span {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 .site-content {
@@ -144,6 +157,12 @@ main {
   margin-bottom: 0;
 }
 
+/* Index */
+
+.index-intro {
+  margin-bottom: 3rem;
+}
+
 .index-list {
   list-style: none;
   margin-top: 0;
@@ -153,6 +172,21 @@ main {
 
 .index-list li:before {
   content: '';
+}
+
+/* Posts Index */
+
+.posts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.posts-list li:before {
+  content: '';
+}
+
+.posts-list h3 {
+  margin-bottom: 0;
 }
 
 /* Post */
@@ -172,7 +206,7 @@ main {
 }
 
 .post h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .post p {

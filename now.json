@@ -2,13 +2,14 @@
   "version": 2,
   "alias": ["christopherknewton.com"],
   "builds": [
-    { "src": "/pages/*.js", "use": "@now/node" },
+    { "src": "/routes/*.js", "use": "@now/node" },
     { "src": "/static/**/*", "use": "@now/static" }
   ],
   "routes" : [
     { "handle": "filesystem" },
-    { "src": "/", "dest": "/pages/index.js" },
-    { "src": "/post", "dest": "/pages/post.js" },
-    { "src": "/(?<slug>[^/]*)", "dest": "/pages/project.js?slug=$slug" }
+    { "src": "/", "dest": "/routes/home.js" },
+    { "src": "/posts", "dest": "/routes/posts.js" },
+    { "src": "/posts/(?<slug>[^/]*)", "dest": "/routes/posts.js?slug=$slug" },
+    { "src": "/(?<slug>[^/]*)", "dest": "/routes/project.js?slug=$slug" }
   ]
 }

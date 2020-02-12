@@ -1,5 +1,5 @@
 import ragtag from 'ragtag';
-import layout from '../components/layout';
+import layout from '../ui/components/layout';
 import { projects } from '../data';
 
 const content = ({ title }) => ragtag`
