@@ -9,7 +9,9 @@ const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } 
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="" content="noindex, nofollow, noarchive">
+      <meta name="robots" content="index, follow, noarchive">
+      <meta name="description" content="Melbourne-based freelance UI Developer with a background in design">
+      <meta name="keywords" content="freelance, ui, user, interface, ux, experience, developer, frontend, front, end, melbourne">
       <link rel="stylesheet" href="/static/index.css">
       <title>${title}</title>
     </head>
