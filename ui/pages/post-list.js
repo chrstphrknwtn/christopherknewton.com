@@ -9,7 +9,7 @@ const postsListPage = posts => {
         ${posts.map(p => `
           <li>
             <h3><a href="/posts/${p.fields.slug}">${p.fields.title}</a></h3>
-            <p>${p.fields.excerpt}</p>
+            <p><em>${p.fields.excerpt}</em></p>
           </li>
         `)}
       </ul>
