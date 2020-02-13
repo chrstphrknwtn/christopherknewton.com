@@ -17,7 +17,7 @@ export default post => {
     <h1>${post.fields.title}</h1>
 
     <section class="entry--body">
-      ${marked(post.fields.body)}
+      ${marked(post.fields.body || '')}
     </section>
 
   </article>
