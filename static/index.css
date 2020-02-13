@@ -2,9 +2,20 @@
 
 :root {
   --base-font-features: 'onum';
-
   --font-weight-regular: 400;
   --font-weight-bold: 500;
+
+  --foreground-color: black;
+  --background-color: white;
+  --link-background-color: #f7f7f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-color: white;
+    --background-color: #010101;
+    --link-background-color: #181818;
+  }
 }
 
 *, *:before, *:after {
@@ -26,23 +37,13 @@ body {
   height: 100%;
   margin: 0 2rem;
   font-family: 'EB Garamond', serif;
+  font-family: 'EB Garamond', serif;
   line-height: 1.43;
-  color: black;
-  background-color: white;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
   font-feature-settings: var(--base-font-features);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: white;
-    background:  #010101;
-  }
-
-  a {
-    color: skyblue;
-  }
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
@@ -68,7 +69,7 @@ h1, h2 {
 a {
   color: inherit;
   text-decoration: none;
-  background-color: #f7f7f7;
+  background-color: var(--link-background-color);
 }
 
 a:hover {
