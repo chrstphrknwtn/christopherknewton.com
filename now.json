@@ -13,5 +13,10 @@
     { "src": "/projects", "dest": "/routes/projects.js" },
     { "src": "/projects/(?<slug>[^/]*)", "dest": "/routes/projects.js?slug=$slug" },
     { "src": "/preview/(?<id>[^/]*)", "dest": "/routes/preview.js?id=$id" }
-  ]
+  ],
+  "env": {
+    "CONTENTFUL_SPACE": "@christopherknewton-contentful-space",
+    "CONTENTFUL_ACCESS_TOKEN": "@christopherknewton-contentful-access-token",
+    "CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@christopherknewton-contentful-preview-access-token"
+  }
 }
