@@ -6,9 +6,9 @@ import projectIndex from '../ui/pages/project-index';
 export default async (req, res) => {
   const { query } = req;
 
-  // Redirect /posts/ (trailing slash) to /posts
+  // Redirect /projects/ (trailing slash) to /projects
   if (Object.hasOwnProperty.call(query, 'slug') && !query.slug) {
-    res.writeHead(302, { Location: '/posts' });
+    res.writeHead(302, { Location: '/projects' });
     res.end();
     return;
   }
