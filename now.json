@@ -11,6 +11,7 @@
     { "src": "/posts", "dest": "/routes/posts.js" },
     { "src": "/posts/(?<slug>[^/]*)", "dest": "/routes/posts.js?slug=$slug" },
     { "src": "/projects", "dest": "/routes/projects.js" },
-    { "src": "/projects/(?<slug>[^/]*)", "dest": "/routes/projects.js?slug=$slug" }
+    { "src": "/projects/(?<slug>[^/]*)", "dest": "/routes/projects.js?slug=$slug" },
+    { "src": "/preview/(?<id>[^/]*)", "dest": "/routes/preview.js?id=$id" }
   ]
 }
