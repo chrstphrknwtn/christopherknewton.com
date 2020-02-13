@@ -1,3 +1,3 @@
-import layout from '../components/layout';
+import document from '../components/document';
 
-export default message => layout({ content: message });
+export default message => document({ content: message ? message : 'Whoops... Something is broken.' });

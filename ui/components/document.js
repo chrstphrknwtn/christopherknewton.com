@@ -1,7 +1,7 @@
 import ragtag from 'ragtag';
 import c from 'copyright';
 
-const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } = {}) => ragtag`
+const document = ({ title, content, isIndex } = {}) => ragtag`
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -11,7 +11,7 @@ const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } 
       <meta name="description" content="Melbourne-based freelance UI Developer with a background in design">
       <meta name="keywords" content="freelance, ui, user, interface, ux, experience, developer, frontend, front, end, melbourne">
       <link rel="stylesheet" href="/static/index.css">
-      <title>${title}</title>
+      <title>${title && `${title} · `}Christopher Newton · UI Developer</title>
     </head>
     <body>
       <main>
@@ -29,4 +29,4 @@ const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } 
   </html>
 `;
 
-export default layout;
+export default document;

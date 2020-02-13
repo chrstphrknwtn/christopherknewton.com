@@ -15,13 +15,14 @@
     "xo": "^0.25.3"
   },
   "xo": {
-    "space": true,
+    "space": 2,
     "rules": {
       "object-curly-spacing": [
         "error",
         "always"
       ],
-      "camelcase": 0
+      "camelcase": 0,
+      "jsx": 0
     }
   }
 }

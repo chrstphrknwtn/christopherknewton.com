@@ -1,7 +1,7 @@
 import contentful from '../lib/contentful';
 import error from '../ui/pages/error';
-import postIndex from '../ui/pages/post-index';
-import post from '../ui/pages/post';
+import project from '../ui/pages/project';
+import projectIndex from '../ui/pages/project-index';
 
 export default async (req, res) => {
   const { query } = req;
@@ -13,16 +13,16 @@ export default async (req, res) => {
     return;
   }
 
-  // Post
+  // Project
   if (query.slug) {
     try {
-      const response = await contentful.getEntries({ content_type: 'post', 'fields.slug': query.slug });
+      const response = await contentful.getEntries({ content_type: 'project', 'fields.slug': query.slug });
 
       if (response.items.length === 1) {
-        res.send(post(response.items[0]));
+        res.send(project(response.items[0]));
       } else {
         res.status(404);
-        res.send(error('Post not found.'));
+        res.send(error('Project not found.'));
       }
     } catch {
       res.status(500);
@@ -32,13 +32,13 @@ export default async (req, res) => {
     return;
   }
 
-  // Post list
+  // Project index
   try {
-    const response = await contentful.getEntries({ content_type: 'post' });
+    const response = await contentful.getEntries({ content_type: 'project' });
     if (response.items.length > 0) {
-      res.send(postIndex(response.items));
+      res.send(projectIndex(response.items));
     } else {
-      res.send(error('No posts yet!'));
+      res.send(error('No projects yet!'));
     }
   } catch {
     res.status(500);

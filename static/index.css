@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
   font-weight: var(--font-weight-regular);
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-weight: var(--font-weight-bold);
 }
 
@@ -157,65 +157,57 @@ main {
   margin-bottom: 0;
 }
 
-/* Index */
+/* Link Lists */
 
-.index-intro {
-  margin-bottom: 3rem;
-}
-
-.index-list {
+.linklist {
   list-style: none;
   margin-top: 0;
   margin-bottom: 3rem;
   padding: 0;
 }
 
-.index-list li:before {
+.linklist li:before {
   content: '';
 }
 
-/* Posts Index */
-
-.posts-list {
-  list-style: none;
-  padding: 0;
-}
-
-.posts-list li:before {
-  content: '';
-}
-
-.posts-list h3 {
+.linklist li h3 {
   margin-bottom: 0;
 }
 
-/* Post */
 
-.post {
+/* Index */
+
+.index-intro {
+  margin-bottom: 3rem;
+}
+
+/* Project and Post */
+
+.entry {
   margin-bottom: 8rem;
 }
 
-.post--meta {
+.entry--meta {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.post--meta span {
+.entry--meta span {
   margin-bottom: 0;
 }
 
-.post h1 {
+.entry h1 {
   margin-bottom: 2rem;
 }
 
-.post p {
+.entry p {
   text-align: justify;
 }
 
-.post p + h2,
-.post dl + h2,
-.post ol + h2,
-.post ul + h2 {
+.entry p + h2,
+.entry dl + h2,
+.entry ol + h2,
+.entry ul + h2 {
   margin-top: 2rem;
 }
