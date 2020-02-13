@@ -116,6 +116,12 @@ ul > li:before {
   content: '·';
 }
 
+/* Typography utils */
+
+.small-caps {
+  font-feature-settings: var(--base-font-features), 'smcp', 'c2sc';
+}
+
 /* Layout */
 
 main {
