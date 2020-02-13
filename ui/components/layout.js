@@ -22,7 +22,7 @@ const layout = ({ title = 'Christopher Newton', content = '', isIndex = false } 
           ${content}
         </section>
         <footer class="site-footer">
-          <p>${c({ name: 'Christopher Newton', short: true })}</p>
+          <p>${c({ name: 'Christopher Newton', short: true })} · <a target="_blank" href="https://github.com/chrstphrknwtn/christopherknewton.com">Source</a></p>
         </footer>
       </main>
     </body>
