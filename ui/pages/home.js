@@ -24,6 +24,7 @@ export default ({ projects, posts }) => {
   <h3 class="subhead">Code</h3>
   <ul class="linklist">
   <li><a target="_blank" href="https://github.com/chrstphrknwtn">github.com/chrstphrknwtn</a></li>
+  <li><a target="_blank" href="https://www.npmjs.com/~chrstphrknwtn">npmjs.com/~chrstphrknwtn</a></li>
   </ul>
 
   <h3 class="subhead">Contact</h3>
