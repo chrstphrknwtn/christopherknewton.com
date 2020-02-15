@@ -23,7 +23,7 @@ const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
           ${content}
         </section>
         <footer class="site-footer">
-          <p>${c({ name: 'Christopher Newton', short: true })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', title: 'Source' })}</p>
+          <p>${c({ name: 'Christopher Newton', short: true })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', text: 'Source' })}</p>
         </footer>
       </main>
     </body>

@@ -1,3 +1,3 @@
-export default ({ className, href, title }) => `
-<a ${className ? `class="${className}"` : ''} rel="noopener noreferrer" target="_blank" href="${href}">${title}</a>
+export default ({ className, href, title, text }) => `
+<a rel="noopener noreferrer" target="_blank" ${className ? `class="${className}"` : ''} href="${href}" ${title ? `title="${title}"` : ''}>${text}</a>
 `;
