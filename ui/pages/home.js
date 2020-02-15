@@ -1,11 +1,12 @@
 import ragtag from 'ragtag';
 import document from '../components/document';
+import externalLink from '../elements/external-link';
 import postListItem from '../components/post-list-item';
 import projectListItem from '../components/project-list-item';
 
 export default ({ projects, posts, isPreview }) => {
   const content = ragtag`
-  <p class="index-intro">I'm a Melbourne-based freelance <strong>UI Developer</strong> with a <a href="/about">background</a> in design. I've been building user interfaces and user experience prototypes for ten years. These days I focus on web apps in <a target="_blank" href="https://reactjs.org">React</a> and <a target="_blank" href="https://nextjs.org">Next.js</a>.</p>
+  <p class="index-intro">I'm a Melbourne-based freelance <strong>UI Developer</strong> with a <a href="/about">background</a> in design. I've been building user interfaces and user experience prototypes for ten years. These days I focus on web apps in ${externalLink({ href: 'https://reactjs.org', title: 'React' })} and ${externalLink({ href: 'https://nextjs.org', title: 'Next.js' })}.</p>
 
   ${projects && ragtag`
     <h3 class="subhead">Recent Projects</h3>
@@ -23,8 +24,8 @@ export default ({ projects, posts, isPreview }) => {
 
   <h3 class="subhead">Code</h3>
   <ul class="linklist">
-  <li><a target="_blank" href="https://github.com/chrstphrknwtn">github.com/chrstphrknwtn</a></li>
-  <li><a target="_blank" href="https://www.npmjs.com/~chrstphrknwtn">npmjs.com/~chrstphrknwtn</a></li>
+    <li>${externalLink({ href: 'https://github.com/chrstphrknwtn', title: 'github.com/chrstphrknwtn' })}</li>
+    <li>${externalLink({ href: 'https://www.npmjs.com/~chrstphrknwtn', title: 'npmjs.com/~chrstphrknwtn' })}</li>
   </ul>
 
   <h3 class="subhead">Contact</h3>
@@ -41,16 +42,16 @@ export default ({ projects, posts, isPreview }) => {
 
   <h3 class="subhead">tumblrs</h3>
   <ul class="linklist">
-  <li><a target="_blank" href="https://0x001a.com">0x001a.com</a> · <em>graphic</em></li>
-  <li><a target="_blank" href="https://0x002b.com">0x002b.com</a> · <em>photography</em></li>
-  <li><a target="_blank" href="https://0x001e.tumblr.com">0x001e.com</a> · <em>painting</em></li>
+    <li>${externalLink({ href: 'https://0x001a.com', title: '0x001a.com' })} · <em>graphic</em></li>
+    <li>${externalLink({ href: 'https://0x002b.com', title: '0x002b.com' })} · <em>photography</em></li>
+    <li>${externalLink({ href: 'https://0x001e.com', title: '0x001e.com' })} · <em>painting</em></li>
   </ul>
 
   <h3 class="subhead">Colophon</h3>
   <ul class="linklist">
-  <li>Built with <a target="_blank" href="https://www.contentful.com">Contentful</a> <em>&</em> <a target="_blank" href="https://github.com/chrstphrknwtn/ragtag">Ragtag</a></li>
-  <li>Typeset in <a target="_blank" href="http://www.georgduffner.at/ebgaramond/">EB Garamond</a></li>
-  <li>Deployed on <a target="_blank" href="https://zeit.co">Zeit Now</a></li>
+    <li>Built with ${externalLink({ href: 'https://www.contentful.com', title: 'Contentful' })} <em>&</em> ${externalLink({ href: 'https://github.com/chrstphrknwtn/ragtag', title: 'Ragtag' })}</li>
+    <li>Typeset in ${externalLink({ href: 'http://www.georgduffner.at/ebgaramond/', title: 'EB Garamond' })}</li>
+    <li>Deployed on ${externalLink({ href: 'https://zeit.co', title: 'Zeit Now' })}</li>
   </ul>
   `;
 

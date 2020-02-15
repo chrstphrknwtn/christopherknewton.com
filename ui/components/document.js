@@ -1,5 +1,6 @@
 import ragtag from 'ragtag';
 import c from 'copyright';
+import externalLink from '../elements/external-link';
 
 const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
   <!DOCTYPE html>
@@ -22,7 +23,7 @@ const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
           ${content}
         </section>
         <footer class="site-footer">
-          <p>${c({ name: 'Christopher Newton', short: true })} · <a target="_blank" href="https://github.com/chrstphrknwtn/christopherknewton.com">Source</a></p>
+          <p>${c({ name: 'Christopher Newton', short: true })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', title: 'Source' })}</p>
         </footer>
       </main>
     </body>
