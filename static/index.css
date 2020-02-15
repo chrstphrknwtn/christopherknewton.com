@@ -1,7 +1,7 @@
 @import "https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css";
 
 :root {
-  --base-font-features: 'onum';
+  --base-font-features: 'onum', 'pnum';
   --font-weight-regular: 400;
   --font-weight-bold: 500;
 
