@@ -1,13 +1,13 @@
 import ragtag from 'ragtag';
 import c from 'copyright';
 
-const document = ({ title, content, isIndex } = {}) => ragtag`
+const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
   <!DOCTYPE html>
   <html lang="en">
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="robots" content="index, follow, noarchive">
+      <meta name="robots" content="${isPreview ? 'noindex, nofollow' : 'index, follow'}, noarchive">
       <meta name="description" content="Melbourne-based freelance UI Developer with a background in design">
       <meta name="keywords" content="freelance, ui, user, interface, ux, experience, developer, frontend, front, end, melbourne">
       <link rel="stylesheet" href="/static/index.css">

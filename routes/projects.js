@@ -1,5 +1,5 @@
 import contentful from '../lib/contentful';
-import error from '../ui/pages/error';
+import errorPage from '../ui/pages/error';
 import project from '../ui/pages/project';
 import projectIndex from '../ui/pages/project-index';
 
@@ -19,14 +19,15 @@ export default async (req, res) => {
       const response = await contentful.getEntries({ content_type: 'project', 'fields.slug': query.slug });
 
       if (response.items.length === 1) {
-        res.send(project(response.items[0]));
+        res.send(project({ project: response.items[0] }));
       } else {
         res.status(404);
-        res.send(error('Project not found.'));
+        res.send(errorPage('Project not found.'));
       }
-    } catch {
+    } catch (error) {
+      console.error(error);
       res.status(500);
-      res.send(error());
+      res.send(errorPage());
     }
 
     return;
@@ -38,10 +39,11 @@ export default async (req, res) => {
     if (response.items.length > 0) {
       res.send(projectIndex(response.items));
     } else {
-      res.send(error('No projects yet!'));
+      res.send(errorPage('No projects yet!'));
     }
-  } catch {
+  } catch (error) {
+    console.error(error);
     res.status(500);
-    res.send(error());
+    res.send(errorPage());
   }
 };

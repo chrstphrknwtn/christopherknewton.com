@@ -1,5 +1,5 @@
 import { contentfulPreview } from '../lib/contentful';
-import error from '../ui/pages/error';
+import errorPage from '../ui/pages/error';
 import post from '../ui/pages/post';
 import project from '../ui/pages/project';
 
@@ -8,7 +8,7 @@ export default async (req, res) => {
 
   if (!query.id) {
     res.status(400);
-    res.send(error('Entry ID Required'));
+    res.send(errorPage('Entry ID Required'));
     return;
   }
 
@@ -17,18 +17,19 @@ export default async (req, res) => {
 
     switch (response.sys.contentType.sys.id) {
       case 'project':
-        res.send(project(response));
+        res.send(project({ project: response, isPreview: true }));
         return;
       case 'post':
-        res.send(post(response));
+        res.send(post({ post: response, isPreview: true }));
         return;
       default:
         res.status(400);
-        res.send(error('Unknown content type'));
+        res.send(errorPage('Unknown content type'));
         return;
     }
-  } catch {
+  } catch (error) {
+    console.error(error);
     res.status(500);
-    res.send(error());
+    res.send(errorPage());
   }
 };

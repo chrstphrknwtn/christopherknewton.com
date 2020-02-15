@@ -18,5 +18,5 @@ export default async (req, res) => {
     console.log(error);
   }
 
-  res.send(home({ projects, posts }));
+  res.send(home({ projects, posts, isPreview: Boolean(req.query.preview) }));
 };

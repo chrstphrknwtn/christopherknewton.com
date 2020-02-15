@@ -3,7 +3,7 @@ import document from '../components/document';
 import postListItem from '../components/post-list-item';
 import projectListItem from '../components/project-list-item';
 
-export default ({ projects, posts }) => {
+export default ({ projects, posts, isPreview }) => {
   const content = ragtag`
   <p class="index-intro">I'm a Melbourne-based freelance <strong>UI Developer</strong> with a <a href="/about">background</a> in design. I've been building user interfaces and user experience prototypes for ten years. These days I focus on web apps in <a target="_blank" href="https://reactjs.org">React</a> and <a target="_blank" href="https://nextjs.org">Next.js</a>.</p>
 
@@ -54,5 +54,5 @@ export default ({ projects, posts }) => {
   </ul>
   `;
 
-  return document({ content, isIndex: true });
+  return document({ content, isIndex: true, isPreview });
 };

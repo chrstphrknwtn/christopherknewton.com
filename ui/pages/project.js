@@ -2,7 +2,7 @@ import ragtag from 'ragtag';
 import marked from 'marked';
 import document from '../components/document';
 
-export default project => {
+export default ({ project, isPreview }) => {
   const date = new Date(project.sys.createdAt);
   const dateString = new Intl.DateTimeFormat('en-AU', { year: 'numeric', month: 'long', day: 'numeric' }).format(date);
 
@@ -23,5 +23,5 @@ export default project => {
   </article>
   `;
 
-  return document({ content, title: project.fields.title });
+  return document({ content, title: project.fields.title, isPreview });
 };

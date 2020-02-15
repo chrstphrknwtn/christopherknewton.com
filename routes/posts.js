@@ -19,7 +19,7 @@ export default async (req, res) => {
       const response = await contentful.getEntries({ content_type: 'post', 'fields.slug': query.slug });
 
       if (response.items.length === 1) {
-        res.send(post(response.items[0]));
+        res.send(post({ post: response.items[0] }));
       } else {
         res.status(404);
         res.send(error('Post not found.'));
