@@ -149,7 +149,7 @@ main {
   text-decoration: none;
 }
 
-.site-header h2 span {
+.site-header h2 .title {
   font-weight: var(--font-weight-regular);
 }
 

@@ -16,7 +16,7 @@ const document = ({ title, content, isIndex } = {}) => ragtag`
     <body>
       <main>
         <header class="site-header">
-          ${isIndex ? ('<h1>Christopher Newton</h1>') : ('<h2><a href="/">Christopher Newton</a><span> · UI Developer</span></h2>')}
+          ${isIndex ? ('<h1>Christopher Newton</h1>') : ('<h2><a href="/">Christopher Newton</a><span class="title"> · UI Developer</span></h2>')}
         </header>
         <section class="site-content">
           ${content}
