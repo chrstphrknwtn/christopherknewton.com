@@ -48,7 +48,7 @@ export default ({ projects, posts }) => {
 
   <h3 class="subhead">Colophon</h3>
   <ul class="linklist">
-  <li>Built with <a target="_blank" href="https://www.contentful.com">Contentful</a> &amp; <a target="_blank" href="https://github.com/chrstphrknwtn/ragtag">Ragtag</a></li>
+  <li>Built with <a target="_blank" href="https://www.contentful.com">Contentful</a> <em>&</em> <a target="_blank" href="https://github.com/chrstphrknwtn/ragtag">Ragtag</a></li>
   <li>Typeset in <a target="_blank" href="http://www.georgduffner.at/ebgaramond/">EB Garamond</a></li>
   <li>Deployed on <a target="_blank" href="https://zeit.co">Zeit Now</a></li>
   </ul>
