@@ -35,8 +35,8 @@ export default ({ projects, posts }) => {
 
   <h3 class="subhead">Education</h3>
   <ul class="linklist">
-    <li>2012 - 2013 · Master of Design (Dist), RMIT</li>
-    <li>2004 - 2005 · Diploma of Graphic Art, RMIT</li>
+    <li><span class="tnum">2012 - 2013</span> · Master of Design (Dist), RMIT</li>
+    <li><span class="tnum">2004 - 2005</span> · Diploma of Graphic Art, RMIT</li>
   </ul>
 
   <h3 class="subhead">tumblrs</h3>
