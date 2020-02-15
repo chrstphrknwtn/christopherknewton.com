@@ -5,7 +5,6 @@
   --base-font-features: 'onum', 'pnum';
   --font-weight-regular: 400;
   --font-weight-bold: 500;
-
   --foreground-color: black;
   --background-color: white;
   --link-background-color: #f4f4f4;
@@ -19,9 +18,11 @@
   }
 }
 
-*, *:before, *:after {
+/* *,
+*::before,
+*::after {
   box-sizing: border-box;
-}
+} */
 
 html {
   height: 100%;
@@ -39,31 +40,42 @@ html {
 body {
   height: 100%;
   margin: 0 2rem;
+  color: var(--foreground-color);
+  font-weight: 400;
   font-family: 'EB Garamond', serif;
   line-height: inherit;
-  color: var(--foreground-color);
   background-color: var(--background-color);
   font-feature-settings: var(--base-font-features);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
   font-weight: var(--font-weight-regular);
+  font-size: 1rem;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: var(--font-weight-bold);
 }
 
 .subhead {
   display: block;
   margin-bottom: 1rem;
-  font-size: 0.9rem;
   font-weight: var(--font-weight-regular);
+  font-size: 0.9rem;
   font-feature-settings: var(--base-font-features), 'smcp', 'c2sc';
   letter-spacing: 0.05em;
 }
@@ -83,8 +95,8 @@ dt {
 }
 
 dd {
-  margin-left: 1rem;
   margin-bottom: 0.5rem;
+  margin-left: 1rem;
 }
 
 mark {
@@ -101,8 +113,8 @@ p {
 
 ol,
 ul {
-  padding-left: 2rem;
   margin-bottom: 1rem;
+  padding-left: 2rem;
 }
 
 ul {
@@ -113,7 +125,7 @@ ul > li {
   position: relative;
 }
 
-ul > li:before {
+ul > li::before {
   position: absolute;
   left: -1rem;
   content: '·';
@@ -125,7 +137,11 @@ ul > li:before {
   font-feature-settings: var(--base-font-features), 'smcp', 'c2sc';
 }
 
-/* Layout */
+.tnum {
+  font-feature-settings: var(--base-font-features), 'tnum';
+}
+
+/* Document */
 
 main {
   display: flex;
@@ -169,20 +185,19 @@ main {
 /* Link Lists */
 
 .linklist {
-  list-style: none;
   margin-top: 0;
   margin-bottom: 3rem;
   padding: 0;
+  list-style: none;
 }
 
-.linklist li:before {
+.linklist li::before {
   content: '';
 }
 
 .linklist li h3 {
   margin-bottom: 0;
 }
-
 
 /* Index */
 

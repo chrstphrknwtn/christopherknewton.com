@@ -12,6 +12,10 @@
     "ragtag": "^0.0.6"
   },
   "devDependencies": {
+    "stylelint": "^13.2.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.0.0",
     "xo": "^0.25.3"
   },
   "xo": {
@@ -21,8 +25,16 @@
         "error",
         "always"
       ],
-      "camelcase": 0,
-      "jsx": 0
+      "camelcase": 0
+    }
+  },
+  "stylelint": {
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-rational-order"
+    ],
+    "rules": {
+      "color-hex-length": "long"
     }
   }
 }
