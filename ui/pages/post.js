@@ -1,5 +1,5 @@
 import ragtag from 'ragtag';
-import marked from 'marked';
+import markdown from '../../lib/markdown';
 import document from '../components/document';
 
 export default ({ post, isPreview }) => {
@@ -17,7 +17,7 @@ export default ({ post, isPreview }) => {
     <h1>${post.fields.title}</h1>
 
     <section class="entry--body">
-      ${marked(post.fields.body || '')}
+      ${markdown(post.fields.body)}
     </section>
 
   </article>
