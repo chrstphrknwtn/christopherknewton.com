@@ -9,6 +9,7 @@
     { "handle": "filesystem" },
     { "src": "/", "dest": "/routes/home.js" },
     { "src": "/about", "dest": "/routes/about.js" },
+    { "src": "/tumblrs", "dest": "/routes/tumblrs.js" },
     { "src": "/posts", "dest": "/routes/posts.js" },
     { "src": "/posts/(?<slug>[^/]*)", "dest": "/routes/posts.js?slug=$slug" },
     { "src": "/projects", "dest": "/routes/projects.js" },
@@ -18,6 +19,7 @@
   "env": {
     "CONTENTFUL_SPACE": "@christopherknewton-contentful-space",
     "CONTENTFUL_ACCESS_TOKEN": "@christopherknewton-contentful-access-token",
-    "CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@christopherknewton-contentful-preview-access-token"
+    "CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@christopherknewton-contentful-preview-access-token",
+    "TUMBLR_API_KEY": "@christopherknewton-tumblr-api-key"
   }
 }

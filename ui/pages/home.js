@@ -40,7 +40,7 @@ export default ({ projects, posts, isPreview }) => {
     <li><span class="tnum">2004 - 2005</span> · Diploma of Graphic Art, RMIT</li>
   </ul>
 
-  <h3 class="subhead">tumblrs</h3>
+  <h3 class="subhead">tumblrs · <a href="/tumblrs">Latest</a></h3>
   <ul class="linklist">
     <li>${externalLink({ href: 'https://0x001a.com', text: '0x001a.com' })} · <em>graphic</em></li>
     <li>${externalLink({ href: 'https://0x002b.com', text: '0x002b.com' })} · <em>photography</em></li>

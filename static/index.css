@@ -18,19 +18,19 @@
   }
 }
 
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 
 html {
   height: 100%;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.43;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 646px) { /* 34 x rem (19px) */
   html {
     font-size: 19px;
     line-height: 1.43;
@@ -39,7 +39,7 @@ html {
 
 body {
   height: 100%;
-  margin: 0 2rem;
+  margin: 0;
   color: var(--foreground-color);
   font-weight: 400;
   font-family: 'EB Garamond', serif;
@@ -146,14 +146,31 @@ ul > li::before {
 main {
   display: flex;
   flex-direction: column;
-  max-width: 30rem;
   min-height: 100%;
-  margin-right: auto;
-  margin-left: auto;
+}
+
+.site-header,
+.site-content,
+.site-footer {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+@media (min-width: 646px) { /* 34 x rem (19px) */
+  .site-header,
+  .site-content,
+  .site-footer {
+    width: 34rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 
 .site-header {
-  padding: 2rem 0 3rem 0;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
 }
 
 .site-header h1,
@@ -172,6 +189,14 @@ main {
 
 .site-content {
   flex-grow: 1;
+}
+
+@media (min-width: 798px) { /* 42 x rem (19px) */
+  .wide .site-header,
+  .wide .site-content,
+  .wide .site-footer {
+    width: 42rem;
+  }
 }
 
 .site-footer {
@@ -236,4 +261,22 @@ main {
 .entry ol + h2,
 .entry ul + h2 {
   margin-top: 2rem;
+}
+
+/* Tumblrs */
+
+.tumblr-columns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.tumblr-column {
+  width: 30%;
+}
+
+.tumblr-column img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }

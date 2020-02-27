@@ -2,7 +2,7 @@ import ragtag from 'ragtag';
 import c from 'copyright';
 import externalLink from '../elements/external-link';
 
-const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
+const document = ({ title, content, isIndex, isPreview, hasWideContent } = {}) => ragtag`
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -15,9 +15,9 @@ const document = ({ title, content, isIndex, isPreview } = {}) => ragtag`
       <title>${title && `${title} · `}Christopher Newton · UI Developer</title>
     </head>
     <body>
-      <main>
+      <main class="${hasWideContent && 'wide'}">
         <header class="site-header">
-          ${isIndex ? ('<h1>Christopher Newton</h1>') : ('<h2><a href="/">Christopher Newton</a><span class="title"> · UI Developer</span></h2>')}
+          ${isIndex ? ('<h1>Christopher Newton</h1>') : (ragtag`<h2><a href="/${isPreview && '?preview=1'}">Christopher Newton</a><span class="title"> · UI Developer</span></h2>`)}
         </header>
         <section class="site-content">
           ${content}
