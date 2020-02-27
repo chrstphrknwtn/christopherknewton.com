@@ -1,4 +1,4 @@
-import { contentfulPreview } from '../lib/contentful';
+import contentful from '../lib/contentful';
 import errorPage from '../ui/pages/error';
 import post from '../ui/pages/post';
 import project from '../ui/pages/project';
@@ -12,8 +12,10 @@ export default async (req, res) => {
     return;
   }
 
+  const contentfulClient = contentful({ isPreview: true });
+
   try {
-    const response = await contentfulPreview.getEntry(query.id);
+    const response = await contentfulClient.getEntry(query.id);
 
     switch (response.sys.contentType.sys.id) {
       case 'project':

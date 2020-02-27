@@ -1,4 +1,4 @@
-import contentful, { contentfulPreview } from '../lib/contentful';
+import contentful from '../lib/contentful';
 import error from '../ui/pages/error';
 import postIndex from '../ui/pages/post-index';
 import post from '../ui/pages/post';
@@ -6,7 +6,7 @@ import post from '../ui/pages/post';
 export default async (req, res) => {
   const { query } = req;
 
-  const contentfulClient = req.query.preview ? contentfulPreview : contentful;
+  const contentfulClient = contentful({ isPreview: req.query.preview });
 
   // Redirect /posts/ (trailing slash) to /posts
   if (Object.hasOwnProperty.call(query, 'slug') && !query.slug) {

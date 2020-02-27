@@ -1,4 +1,4 @@
-import contentful, { contentfulPreview } from '../lib/contentful';
+import contentful from '../lib/contentful';
 import errorPage from '../ui/pages/error';
 import project from '../ui/pages/project';
 import projectIndex from '../ui/pages/project-index';
@@ -6,7 +6,7 @@ import projectIndex from '../ui/pages/project-index';
 export default async (req, res) => {
   const { query } = req;
 
-  const contentfulClient = req.query.preview ? contentfulPreview : contentful;
+  const contentfulClient = contentful({ isPreview: req.query.preview });
 
   // Redirect /projects/ (trailing slash) to /projects
   if (Object.hasOwnProperty.call(query, 'slug') && !query.slug) {

@@ -1,11 +1,11 @@
-import contentful, { contentfulPreview } from '../lib/contentful';
+import contentful from '../lib/contentful';
 import home from '../ui/pages/home';
 
 export default async (req, res) => {
   let posts;
   let projects;
 
-  const contentfulClient = req.query.preview ? contentfulPreview : contentful;
+  const contentfulClient = contentful({ isPreview: req.query.preview });
 
   try {
     const response = await contentfulClient.getEntries();
