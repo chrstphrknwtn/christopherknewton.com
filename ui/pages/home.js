@@ -11,14 +11,14 @@ export default ({ projects, posts, isPreview }) => {
   ${projects && ragtag`
     <h3 class="subhead">Recent Projects</h3>
     <ul class="linklist">
-      ${projects.map(project => projectListItem(project))}
+      ${projects.map(project => projectListItem({ project, isPreview }))}
     </ul>
   `}
 
   ${posts && ragtag`
     <h3 class="subhead">Posts</h3>
     <ul class="linklist">
-      ${posts.map(post => postListItem(post))}
+      ${posts.map(post => postListItem({ post, isPreview }))}
     </ul>
   `}
 

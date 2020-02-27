@@ -10,7 +10,7 @@ export default ({ post, isPreview }) => {
   <article class="entry">
 
     <section class="entry--meta">
-      <span class="subhead"><a href="/posts">Posts</a></span>
+      <span class="subhead"><a href="/posts${isPreview && '?preview=1'}">Posts</a></span>
       <span class="subhead">${dateString}</span>
     </section>
 

@@ -1,10 +1,12 @@
-import contentful from '../lib/contentful';
+import contentful, { contentfulPreview } from '../lib/contentful';
 import errorPage from '../ui/pages/error';
 import project from '../ui/pages/project';
 import projectIndex from '../ui/pages/project-index';
 
 export default async (req, res) => {
   const { query } = req;
+
+  const contentfulClient = req.query.preview ? contentfulPreview : contentful;
 
   // Redirect /projects/ (trailing slash) to /projects
   if (Object.hasOwnProperty.call(query, 'slug') && !query.slug) {
@@ -35,9 +37,9 @@ export default async (req, res) => {
 
   // Project index
   try {
-    const response = await contentful.getEntries({ content_type: 'project' });
+    const response = await contentfulClient.getEntries({ content_type: 'project' });
     if (response.items.length > 0) {
-      res.send(projectIndex(response.items));
+      res.send(projectIndex({ projects: response.items, isPreview: query.preview }));
     } else {
       res.send(errorPage('No projects yet!'));
     }

@@ -1,10 +1,12 @@
-import contentful from '../lib/contentful';
+import contentful, { contentfulPreview } from '../lib/contentful';
 import error from '../ui/pages/error';
 import postIndex from '../ui/pages/post-index';
 import post from '../ui/pages/post';
 
 export default async (req, res) => {
   const { query } = req;
+
+  const contentfulClient = req.query.preview ? contentfulPreview : contentful;
 
   // Redirect /posts/ (trailing slash) to /posts
   if (Object.hasOwnProperty.call(query, 'slug') && !query.slug) {
@@ -34,9 +36,9 @@ export default async (req, res) => {
 
   // Post list
   try {
-    const response = await contentful.getEntries({ content_type: 'post' });
+    const response = await contentfulClient.getEntries({ content_type: 'post' });
     if (response.items.length > 0) {
-      res.send(postIndex(response.items));
+      res.send(postIndex({ posts: response.items, isPreview: query.preview }));
     } else {
       res.send(error('No posts yet!'));
     }
