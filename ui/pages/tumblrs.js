@@ -9,7 +9,7 @@ const blogDescriptors = {
 
 export default ({ tumblrs }) => {
   const content = ragtag`
-    <h1 class="subhead">Tumblrs</h1>
+    <h1 class="subhead">Visual reference</h1>
     <section class="tumblr-columns-wrapper">
       ${tumblrs.map(tumblr => ragtag`
         <section class="tumblr-column">

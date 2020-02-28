@@ -9,7 +9,7 @@
     { "handle": "filesystem" },
     { "src": "/", "dest": "/routes/home.js" },
     { "src": "/about", "dest": "/routes/about.js" },
-    { "src": "/tumblrs", "dest": "/routes/tumblrs.js" },
+    { "src": "/visual-reference", "dest": "/routes/tumblrs.js" },
     { "src": "/posts", "dest": "/routes/posts.js" },
     { "src": "/posts/(?<slug>[^/]*)", "dest": "/routes/posts.js?slug=$slug" },
     { "src": "/projects", "dest": "/routes/projects.js" },
