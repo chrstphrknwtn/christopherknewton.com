@@ -18,7 +18,7 @@ export default ({ tumblrs }) => {
         </p>
         ${tumblr.posts.map(post => ragtag`
           <a target="_blank" href="${post.post_url}">
-            <img src="${post.photos[0].alt_sizes[2].url}" />
+            <img src="${post.photos[0].alt_sizes[4].url}" />
           </a>
         `)}
         </section>
