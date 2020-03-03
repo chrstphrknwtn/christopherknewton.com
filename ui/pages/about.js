@@ -5,8 +5,7 @@ import document from '../components/document';
 export default () => {
   const content = ragtag`
     <section class="entry">
-      <h2 class="subhead">About</h2>
-      <p>I'm a freelance <strong>UI developer</strong> from Melbourne. I implement user interfaces, user experience prototypes and design systems. I'm most useful where design and front end development coincide.</p>
+      <p>I'm a Melbourne-based freelance <strong>UI Developer</strong> with a background in design. I've been building user interfaces and user experience prototypes for ten years. These days I focus on web apps in ${externalLink({ href: 'https://reactjs.org', text: 'React' })} and ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })}.</p>
 
       <p>For the last two years I've been working on ${externalLink({ href: 'https://fieldfolio.com', text: 'Fieldfolio' })}.</p>
 
