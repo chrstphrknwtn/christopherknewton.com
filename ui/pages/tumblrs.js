@@ -41,5 +41,5 @@ export default ({ tumblrs }) => {
     </section>
   `;
 
-  return document({ content, title: 'Tumblrs', hasWideContent: true });
+  return document({ content, title: 'Visual reference', hasWideContent: true });
 };
