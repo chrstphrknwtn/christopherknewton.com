@@ -199,6 +199,14 @@ main {
   }
 }
 
+@media (min-width: 988px) { /* 52 x rem (19px) */
+  .wide .site-header,
+  .wide .site-content,
+  .wide .site-footer {
+    width: 52rem;
+  }
+}
+
 .site-footer {
   padding-bottom: 2rem;
 }
@@ -268,16 +276,33 @@ main {
 
 .tumblr-columns-wrapper {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 3rem;
 }
 
 .tumblr-column {
-  width: 30%;
+  width: 33.33%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
-.tumblr-column img {
+.tumblr-column:first-child {
+  padding-left: 0;
+}
+
+.tumblr-column:last-child {
+  padding-right: 0;
+}
+
+.tumblr-post {
+  position: relative;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.tumblr-post img {
   display: block;
   max-width: 100%;
-  margin-bottom: 1rem;
+  max-height: 100%;
 }
