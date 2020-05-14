@@ -51,7 +51,7 @@ export default ({ projects, posts, isPreview }) => {
   <ul class="linklist">
     <li>Built with ${externalLink({ href: 'https://www.contentful.com', text: 'Contentful' })} <em>&</em> ${externalLink({ href: 'https://github.com/chrstphrknwtn/ragtag', text: 'Ragtag' })}</li>
     <li>Typeset in ${externalLink({ href: 'http://www.georgduffner.at/ebgaramond/', text: 'EB Garamond' })}</li>
-    <li>Deployed on ${externalLink({ href: 'https://zeit.co', text: 'Zeit Now' })}</li>
+    <li>Deployed on ${externalLink({ href: 'https://vercel.com', text: 'Vercel' })}</li>
   </ul>
   `;
 
