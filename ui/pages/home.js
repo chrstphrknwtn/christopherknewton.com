@@ -6,7 +6,7 @@ import projectListItem from '../components/project-list-item';
 
 export default ({ projects, posts, isPreview }) => {
   const content = ragtag`
-  <p class="index-intro">I'm a Melbourne-based freelance <strong>UI Developer</strong> with a <a href="/about">background</a> in design. I've been building user interfaces and user experience prototypes for ten years. These days I focus on web apps in ${externalLink({ href: 'https://reactjs.org', text: 'React' })} and ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })}.</p>
+  <p class="index-intro">I'm a <strong>front-end developer</strong> from Melbourne with a <a href="/about">background</a> in design. I've been creating digital and interactive things for about ten years. These days I'm mostly building and maintaining ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })} apps.</p>
 
   ${projects && ragtag`
     <h3 class="subhead">Recent Projects</h3>

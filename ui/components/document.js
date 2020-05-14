@@ -12,12 +12,12 @@ const document = ({ title, content, isIndex, isPreview, hasWideContent } = {}) =
       <meta name="description" content="Melbourne-based freelance UI Developer with a background in design">
       <meta name="keywords" content="freelance, ui, user, interface, ux, experience, developer, frontend, front, end, melbourne">
       <link rel="stylesheet" href="/static/index.css">
-      <title>${title && `${title} · `}Christopher Newton · UI Developer</title>
+      <title>${title && `${title} · `}Christopher Newton</title>
     </head>
     <body>
       <main class="${hasWideContent && 'wide'}">
         <header class="site-header">
-          ${isIndex ? ('<h1>Christopher Newton</h1>') : (ragtag`<h2><a href="/${isPreview && '?preview=1'}">Christopher Newton</a><span class="title"> · UI Developer</span></h2>`)}
+          ${isIndex ? ('<h1>Christopher Newton</h1>') : (ragtag`<h2><a href="/${isPreview && '?preview=1'}">Christopher Newton</a></h2>`)}
         </header>
         <section class="site-content">
           ${content}
