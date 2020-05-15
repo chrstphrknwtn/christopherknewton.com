@@ -2,7 +2,7 @@ import ragtag from 'ragtag';
 import c from 'copyright';
 import externalLink from '../elements/external-link';
 
-const document = ({ title, content, isIndex, isPreview, hasWideContent } = {}) => ragtag`
+const document = ({ title, content, isIndex, isPreview, hasWideContent, hasMaxWidthContent } = {}) => ragtag`
   <!DOCTYPE html>
   <html lang="en">
     <head>
@@ -15,14 +15,14 @@ const document = ({ title, content, isIndex, isPreview, hasWideContent } = {}) =
       <title>${title && `${title} · `}Christopher Newton</title>
     </head>
     <body>
-      <main class="${hasWideContent && 'wide'}">
-        <header class="site-header">
+      <main class="${hasWideContent ? 'wide' : (hasMaxWidthContent ? 'max-width-content' : '')}">
+        <header class="site-header responsive-container">
           ${isIndex ? ('<h1>Christopher Newton</h1>') : (ragtag`<h2><a href="/${isPreview && '?preview=1'}">Christopher Newton</a></h2>`)}
         </header>
-        <section class="site-content">
+        <section class="site-content responsive-container">
           ${content}
         </section>
-        <footer class="site-footer">
+        <footer class="site-footer responsive-container">
           <p>${c({ name: 'Christopher Newton', short: true })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', text: 'Source' })}</p>
         </footer>
       </main>
