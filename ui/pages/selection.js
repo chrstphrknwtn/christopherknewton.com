@@ -1,139 +1,102 @@
 import ragtag from 'ragtag';
 import document from '../components/document';
+import markdown from '../../lib/markdown';
+
+const data = {
+  page: {
+    title: '',
+    description: 'A selection of photographs.'
+  },
+  projects: [
+    {
+      title: 'Indexical',
+      year: 2020,
+      description: 'Humans continue to have [paper thoughts]() in the face of technological advancement. The layers and systems of bureaucratic communication in society largely remain marks on physical and virtual substrates. Our urban environment is another substrate for control and communication.',
+      images: [
+        '/static/images/indexical-1.jpg',
+        '/static/images/indexical-2.jpg',
+        '/static/images/indexical-3.jpg',
+        '/static/images/indexical-4.jpg'
+      ]
+    },
+    {
+      reverse: true,
+      title: 'Solheimajokull',
+      year: 2019,
+      description: 'The physical scale of these scenes are not immediately obvious nor possible to concretely ascertain by viewing the images. Understanding the scale of the glacier has no direct effect on it\'s existence.',
+      images: [
+        '/static/images/solheimajokull-11.jpg',
+        '/static/images/solheimajokull-10.jpg'
+      ]
+    },
+    {
+      title: 'Viewing Distance',
+      year: 2019,
+      description: '*You will enjoy yourself from here.*',
+      images: [
+        '/static/images/paths-1.jpg',
+        '/static/images/paths-2.jpg',
+        '/static/images/paths-3.jpg'
+      ]
+    },
+    {
+      reverse: true,
+      title: 'Landmannalaugar Contact',
+      year: 2019,
+      description: '',
+      images: [
+        '/static/images/landmannalaugar-contact.jpg'
+      ]
+    },
+    {
+      title: 'Graduation Ceremony',
+      year: 2018,
+      description: 'Configuration and residue of a university graduation ceremony at the Royal Exhibition building.',
+      images: [
+        '/static/images/graduation-1.jpg',
+        '/static/images/graduation-2.jpg',
+        '/static/images/graduation-3.jpg',
+        '/static/images/graduation-4.jpg'
+      ]
+    },
+    {
+      title: '9600 Meilleur',
+      year: 2010,
+      description: '',
+      images: [
+        '/static/images/9600-meilleur.jpg'
+      ]
+    },
+    {
+      title: 'Jethro',
+      year: 2008,
+      description: '',
+      images: [
+        '/static/images/jethro.jpg'
+      ]
+    }
+  ]
+};
 
 export default () => {
   const content = ragtag`
     <section class="selection-intro responsive-container">
-      <p>A selection of photographs.</p>
+      <p>${data.page.description}</p>
     </section>
 
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Indexical, 2020.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/indexical-1.jpg" alt="" />
-        <img src="/static/images/indexical-2.jpg" alt="" />
-        <img src="/static/images/indexical-3.jpg" alt="" />
+    ${data.projects.map(project => ragtag`
+      <section class="photo-section ${project.reverse && 'reverse'}">
+        <header class="photo-section--header">
+          <div class="responsive-container">
+            <h2>${project.title}, ${project.year}.</h2>
+            <p>${markdown(project.description)}</p>
+          </div>
+        </header>
+        <section class="photo-section--images ${project.images.length === 1 && 'solo'}">
+          ${project.images.map(image => `<a href="${image}" target="_blank"><img src="${image}" alt="" /></a>`)}
+        </section>
       </section>
-    </section>
-
-    <section class="photo-section reverse">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Solheimajokull, 2019.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/solheimajokull-11.jpg" alt="" />
-        <img src="/static/images/solheimajokull-10.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Museum city, 2019.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-      </section>
-    </section>
-
-    <section class="photo-section reverse">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Landmannalaugar contact, 2019.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/landmannalaugar-contact.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Paths, 2019.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/paths-1.jpg" alt="" />
-        <img src="/static/images/paths-2.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Graduation, 2018.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/graduation-1.jpg" alt="" />
-        <img src="/static/images/graduation-2.jpg" alt="" />
-        <img src="/static/images/graduation-3.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2><span class="small-caps">CDG</span> - <span class="small-caps">BRU</span>, 2014.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/cdgbru-1.jpg" alt="" />
-        <img src="/static/images/cdgbru-2.jpg" alt="" />
-        <img src="/static/images/cdgbru-3.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>9600 Meilleur, 2010.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/9600-meilleur.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Jethro, 2008.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/jethro.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section reverse">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Michael, 2008.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/michael.jpg" alt="" />
-      </section>
-    </section>
-
-    <section class="photo-section">
-      <header class="photo-section--header">
-        <div class="responsive-container">
-          <h2>Lucy, 2007.</h2>
-        </div>
-      </header>
-      <section class="photo-section--images">
-        <img src="/static/images/lucy.jpg" alt="" />
-      </section>
-    </section>
+    `)}
   `;
 
   return document({ content, title: 'Photography selection', hasMaxWidthContent: true });

@@ -30,13 +30,6 @@ html {
   line-height: 1.57;
 }
 
-@media (min-width: 646px) { /* 34 x rem (19px) */
-  html {
-    font-size: 19px;
-    line-height: 1.43;
-  }
-}
-
 body {
   height: 100%;
   margin: 0;
@@ -232,12 +225,6 @@ main {
   margin-bottom: 3rem;
 }
 
-@media (min-width: 481px) {
-  .index-intro {
-    text-align: justify;
-  }
-}
-
 /* Project and Post */
 
 .entry {
@@ -256,12 +243,6 @@ main {
 
 .entry h1 {
   margin-bottom: 2rem;
-}
-
-@media (min-width: 481px) {
-  .entry p {
-    text-align: justify;
-  }
 }
 
 .entry p + h2,
@@ -313,11 +294,16 @@ main {
 }
 
 .photo-section {
-  /* min-height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  /* min-height: 110vh; */
+  padding-bottom: 6rem;
   border-top: 1px solid #f0f0f0;
+  background-color: white;
 }
 
 .photo-section.reverse {
+  border-top: 1px solid #1a1a1a;
   color: white;
   background-color: black;
 }
@@ -325,13 +311,31 @@ main {
 .photo-section--header {
   position: sticky;
   top: 0;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+}
+
+.photo-section--header p {
+  margin-bottom: 0;
+}
+
+.photo-section.reverse .photo-section--header {
+  background-color: black;
 }
 
 .photo-section--images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
   padding: 0 1.5rem 1.5rem 1.5rem;
   text-align: center;
+}
+
+.photo-section--images a {
+  background-color: transparent;
 }
 
 .photo-section--images img {
@@ -339,4 +343,17 @@ main {
   max-width: 100%;
   max-height: 72vh;
   margin: 1rem 0;
+}
+
+@media (min-width: 988px) { /* 52 x rem (19px) */
+  .photo-section--images img {
+    max-width: 30rem;
+    margin: 2rem;
+  }
+
+  .photo-section--images.solo img {
+    max-width: 70vw;
+    max-height: 80vh;
+    margin: 2rem;
+  }
 }

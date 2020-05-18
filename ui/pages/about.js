@@ -5,7 +5,7 @@ import document from '../components/document';
 export default () => {
   const content = ragtag`
     <section class="entry">
-      <p>I'm a <strong>front-end developer</strong> from Melbourne with a background in design. I've been creating digital and interactive things for about ten years. These days I'm mostly building and maintaining ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })} apps.</p>
+      <p>I'm a developer from Melbourne with a background in design. I've been creating digital and interactive things for about ten years. These days I'm mostly building and maintaining ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })} apps.</p>
 
       <p>Since early 2018 I've been working on ${externalLink({ href: 'https://fieldfolio.com', text: 'Fieldfolio' })}.</p>
 
