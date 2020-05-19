@@ -3,15 +3,11 @@ import document from '../components/document';
 import markdown from '../../lib/markdown';
 
 const data = {
-  page: {
-    title: '',
-    description: 'A selection of photographs.'
-  },
   projects: [
     {
       title: 'Indexical',
       year: 2020,
-      description: 'Humans continue to have [paper thoughts]() in the face of technological advancement. The layers and systems of bureaucratic communication in society largely remain marks on physical and virtual substrates. Our urban environment is another substrate for control and communication.',
+      description: 'Humans continue to have [paper thoughts](https://vimeo.com/115154289) in the face of technological advancement. The layers and systems of bureaucratic communication in society largely remain marks on physical and virtual substrates. Our urban environment is another substrate for our paper thoughts.',
       images: [
         '/static/images/indexical-1.jpg',
         '/static/images/indexical-2.jpg',
@@ -32,7 +28,7 @@ const data = {
     {
       title: 'Viewing Distance',
       year: 2019,
-      description: '*You will enjoy yourself from here.*',
+      description: '*You may enjoy yourself from here.*',
       images: [
         '/static/images/paths-1.jpg',
         '/static/images/paths-2.jpg',
@@ -51,7 +47,7 @@ const data = {
     {
       title: 'Graduation Ceremony',
       year: 2018,
-      description: 'Configuration and residue of a university graduation ceremony at the Royal Exhibition building.',
+      description: 'Configuration and residue of a university graduation ceremony at the Royal Exhibition Building Melbourne.',
       images: [
         '/static/images/graduation-1.jpg',
         '/static/images/graduation-2.jpg',
@@ -81,7 +77,7 @@ const data = {
 export default () => {
   const content = ragtag`
     <section class="selection-intro responsive-container">
-      <p>${data.page.description}</p>
+      <p>A selection of photographs <em>&amp;</em> projects.</p>
     </section>
 
     ${data.projects.map(project => ragtag`

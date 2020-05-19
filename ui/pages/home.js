@@ -49,7 +49,7 @@ export default ({ projects, posts, isPreview }) => {
 
   <h3 class="subhead">Colophon</h3>
   <ul class="linklist">
-    <li>Built with ${externalLink({ href: 'https://www.contentful.com', text: 'Contentful' })} <em>&</em> ${externalLink({ href: 'https://github.com/chrstphrknwtn/ragtag', text: 'Ragtag' })}</li>
+    <li>Built with ${externalLink({ href: 'https://github.com/chrstphrknwtn/ragtag', text: 'Ragtag' })}</li>
     <li>Typeset in ${externalLink({ href: 'http://www.georgduffner.at/ebgaramond/', text: 'EB Garamond' })}</li>
     <li>Deployed on ${externalLink({ href: 'https://vercel.com', text: 'Vercel' })}</li>
   </ul>
