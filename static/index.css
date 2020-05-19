@@ -10,13 +10,13 @@
   --link-background-color: #f4f4f4;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-color: white;
     --background-color: #010101;
     --link-background-color: #212121;
   }
-}
+} */
 
 *,
 *::before,
