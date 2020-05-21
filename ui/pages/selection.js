@@ -58,17 +58,9 @@ const data = {
     {
       title: '9600 Meilleur',
       year: 2010,
-      description: '',
+      description: '2018 CCP Salon award winner.',
       images: [
         '/static/images/9600-meilleur.jpg'
-      ]
-    },
-    {
-      title: 'Jethro',
-      year: 2008,
-      description: '',
-      images: [
-        '/static/images/jethro.jpg'
       ]
     }
   ]
