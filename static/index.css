@@ -296,16 +296,17 @@ main {
 .photo-section {
   display: flex;
   flex-direction: column;
+
   /* min-height: 110vh; */
   padding-bottom: 6rem;
-  border-top: 1px solid #f0f0f0;
   background-color: white;
+  border-top: 1px solid #f0f0f0;
 }
 
 .photo-section.reverse {
-  border-top: 1px solid #1a1a1a;
   color: white;
   background-color: black;
+  border-top: 1px solid #1a1a1a;
 }
 
 .photo-section--header {
@@ -326,10 +327,10 @@ main {
 
 .photo-section--images {
   display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  flex-grow: 1;
   padding: 0 1.5rem 1.5rem 1.5rem;
   text-align: center;
 }
@@ -356,4 +357,18 @@ main {
     max-height: 80vh;
     margin: 2rem;
   }
+}
+
+/* Rhizomes */
+
+.rhizome-index-item {
+  margin-bottom: 1rem;
+}
+
+.rhizome-node {
+  margin-bottom: 2rem;
+}
+
+.rhizome-node + .rhizome-node::before {
+  content: '↑';
 }
