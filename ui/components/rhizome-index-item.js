@@ -1,8 +1,8 @@
 export default ({ rhizomeObject }) => `
 <li class="rhizome-index-item">
-  <h3><a href=${`/rhizomes/${rhizomeObject.slug}`}>${rhizomeObject.title}</a></h3>
-  <small>
+  <h3 class="rhizome-index-item--title"><a href=${`/rhizomes/${rhizomeObject.slug}`}>${rhizomeObject.title}</a></h3>
+  <p>
     ${rhizomeObject.date}, ${rhizomeObject.nodes.length} nodes.
-  </small>
+  </p>
 </li>
 `;

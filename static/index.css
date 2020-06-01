@@ -215,7 +215,7 @@ main {
   content: '';
 }
 
-.linklist li h3 {
+.linklist li > h3 {
   margin-bottom: 0;
 }
 
@@ -363,6 +363,10 @@ main {
 
 .rhizome-index-item {
   margin-bottom: 1rem;
+}
+
+.rhizome-index-item--title {
+  font-weight: var(--font-weight-bold);
 }
 
 .rhizome-node {
