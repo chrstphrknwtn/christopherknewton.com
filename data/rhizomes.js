@@ -7,7 +7,7 @@ export default [
       {
         url: 'https://en.wikipedia.org/wiki/Soviet_montage_theory#Intellectual_montage',
         title: 'Soviet montage theory: Intellectual montage',
-        extract: `...synthesizing multiple perspectives into one painting. The idea of associated concrete images creating a new (often abstract) image was an important aspect of much early [Modernist](https://en.wikipedia.org/wiki/Modernism) art.
+        extract: `...synthesizing multiple perspectives into one painting. The idea of associated concrete images creating a new (often abstract) image...
 
 Eisenstein relates this to non-literary "writing" in pre-literate societies, such as the ancient use of pictures and images in sequence, that are therefore in "conflict". Because the pictures are relating to each other, their collision creates the meaning of the "writing".`
       },
