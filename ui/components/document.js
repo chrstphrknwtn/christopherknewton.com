@@ -23,7 +23,7 @@ const document = ({ title, content, isIndex, isPreview, hasWideContent, hasMaxWi
           ${content}
         </section>
         <footer class="site-footer responsive-container">
-          <p>${c({ name: 'Christopher Newton', short: true })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', text: 'Source' })}</p>
+          <p>${c({ name: 'Christopher Newton', short: true, startYear: 1981 })} · ${externalLink({ href: 'https://github.com/chrstphrknwtn/christopherknewton.com', text: 'Source' })}</p>
         </footer>
       </main>
     </body>
