@@ -32,7 +32,7 @@ export default ({ rhizomeObject }) => {
 
     <script src="/static/lib/d3.v5.min.js"></script>
     <script>
-      const data = eval(${JSON.stringify(rhizomeObject)});
+      const data = ${JSON.stringify(rhizomeObject)};
 
       const width = 200;
       const height = 200;
