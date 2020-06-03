@@ -37,7 +37,7 @@ Eisenstein relates this to non-literary "writing" in pre-literate societies, suc
     },
     {
       id: 'koyaanisqatsi',
-      url: 'https://en.wikipedia.org/wiki/Koyaanisqatsi#Filming',
+      url: 'https://en.wikipedia.org/wiki/Koyaanisqatsi',
       title: 'Koyaanisqatsi (1982 film).',
       extract: `Fricke and Reggio chose to shoot unscripted footage and edit it into an hour-long film.
 

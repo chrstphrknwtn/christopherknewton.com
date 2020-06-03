@@ -6,7 +6,7 @@ import document from '../components/document';
 
 const rhizomeNode = nodeObject => ragtag`
 <div class="rhizome-node">
-  <h2>${externalLink({ href: nodeObject.url, text: nodeObject.title })}</h2>
+  <h2>${nodeObject.url ? externalLink({ href: nodeObject.url, text: nodeObject.title }) : nodeObject.title}</h2>
   ${nodeObject.extract && `<p>${markdown(nodeObject.extract)}</p>`}
 </div>
 `;

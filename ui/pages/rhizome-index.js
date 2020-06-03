@@ -5,7 +5,7 @@ import rhizomeIndexItem from '../components/rhizome-index-item';
 const entryIndex = ({ rhizomes }) => {
   const content = ragtag`
     <section>
-      <h1 class="subhead">Rhizome Index</h1>
+      <h1 class="subhead">Rhizomes</h1>
       <ul class="linklist">
         ${rhizomes.map(rhizomeObject => rhizomeIndexItem({ rhizomeObject }))}
       </ul>
