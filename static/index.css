@@ -373,6 +373,6 @@ main {
   margin-bottom: 2rem;
 }
 
-.rhizome-node + .rhizome-node::before {
-  content: '↑';
+.rhizome--node-graph svg {
+  width: auto;
 }
