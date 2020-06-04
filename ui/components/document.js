@@ -1,6 +1,6 @@
 import ragtag from 'ragtag';
 import c from 'copyright';
-import externalLink from '../elements/external-link';
+import externalLink from '../components/external-link';
 
 const document = ({ title, content, isIndex, isPreview, hasWideContent, hasMaxWidthContent } = {}) => ragtag`
   <!DOCTYPE html>

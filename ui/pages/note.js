@@ -1,7 +1,7 @@
 import ragtag from 'ragtag';
 import markdown from '../../lib/markdown';
 
-import externalLink from '../elements/external-link';
+import externalLink from '../components/external-link';
 import document from '../components/document';
 
 const noteNode = nodeObject => ragtag`

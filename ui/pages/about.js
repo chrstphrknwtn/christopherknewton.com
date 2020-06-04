@@ -1,5 +1,5 @@
 import ragtag from 'ragtag';
-import externalLink from '../elements/external-link';
+import externalLink from '../components/external-link';
 import document from '../components/document';
 
 export default () => {

@@ -1,6 +1,6 @@
 import ragtag from 'ragtag';
 import document from '../components/document';
-import externalLink from '../elements/external-link';
+import externalLink from '../components/external-link';
 
 export default () => {
   const content = ragtag`
