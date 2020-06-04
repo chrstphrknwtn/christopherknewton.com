@@ -241,10 +241,6 @@ main {
   margin-bottom: 0;
 }
 
-.page h1 {
-  margin-bottom: 2rem;
-}
-
 .page p + h2,
 .page dl + h2,
 .page ol + h2,
@@ -369,7 +365,15 @@ main {
   font-weight: var(--font-weight-bold);
 }
 
-.note-node {
+.note--title {
+  margin-bottom: 3rem;
+}
+
+.note--nodes-subhead {
+  margin-bottom: 3rem;
+}
+
+.note--node {
   margin-bottom: 2rem;
 }
 

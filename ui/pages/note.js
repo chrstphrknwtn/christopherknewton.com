@@ -5,7 +5,7 @@ import externalLink from '../elements/external-link';
 import document from '../components/document';
 
 const noteNode = nodeObject => ragtag`
-<div class="note-node">
+<div class="note--node">
   <h2>${nodeObject.url ? externalLink({ href: nodeObject.url, text: nodeObject.title }) : nodeObject.title}</h2>
   ${nodeObject.extract && `<p>${markdown(nodeObject.extract)}</p>`}
 </div>
@@ -22,11 +22,12 @@ export default ({ noteObject }) => {
 
     <section class="note--node-graph"></section>
 
-    <h1>${noteObject.title}</h1>
-    ${noteObject.description && `<p>${noteObject.description}</p>`}
-
-    <span class="subhead">Nodes</span>
     <section class="page--body">
+      <h1 class="note--title">${noteObject.title}</h1>
+      ${noteObject.description && `<p>${noteObject.description}</p>`}
+
+      <span class="subhead note--nodes-subhead">Nodes</span>
+
       ${noteObject.nodes.map(nodeObject => noteNode(nodeObject))}
     </section>
 
