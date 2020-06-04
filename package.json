@@ -7,7 +7,6 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
-    "contentful": "^7.13.1",
     "copyright": "^0.0.2",
     "marked": "^0.8.0",
     "ragtag": "^0.0.6"

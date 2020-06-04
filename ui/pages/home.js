@@ -1,26 +1,10 @@
 import ragtag from 'ragtag';
 import document from '../components/document';
 import externalLink from '../elements/external-link';
-import postListItem from '../components/post-list-item';
-import projectListItem from '../components/project-list-item';
 
-export default ({ projects, posts, isPreview }) => {
+export default () => {
   const content = ragtag`
   <p class="index-intro">I'm a developer from Melbourne with a <a href="/about">background</a> in design. I've been creating  interactive things for about ten years. These days I'm mostly building <em>&</em> maintaining ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })} apps.</p>
-
-  ${projects && ragtag`
-    <h3 class="subhead">Recent Projects</h3>
-    <ul class="linklist">
-      ${projects.map(project => projectListItem({ project, isPreview }))}
-    </ul>
-  `}
-
-  ${posts && ragtag`
-    <h3 class="subhead">Posts</h3>
-    <ul class="linklist">
-      ${posts.map(post => postListItem({ post, isPreview }))}
-    </ul>
-  `}
 
   <h3 class="subhead">Code</h3>
   <ul class="linklist">
@@ -55,5 +39,5 @@ export default ({ projects, posts, isPreview }) => {
   </ul>
   `;
 
-  return document({ content, isIndex: true, isPreview });
+  return document({ content, isIndex: true });
 };

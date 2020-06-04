@@ -11,18 +11,10 @@
     { "src": "/about", "dest": "/routes/about.js" },
     { "src": "/selection", "dest": "/routes/selection.js" },
     { "src": "/visual-reference", "dest": "/routes/tumblrs.js" },
-    { "src": "/posts", "dest": "/routes/posts.js" },
-    { "src": "/posts/(?<slug>[^/]*)", "dest": "/routes/posts.js?slug=$slug" },
-    { "src": "/projects", "dest": "/routes/projects.js" },
-    { "src": "/projects/(?<slug>[^/]*)", "dest": "/routes/projects.js?slug=$slug" },
     { "src": "/rhizomes", "dest": "/routes/rhizomes.js" },
-    { "src": "/rhizomes/(?<slug>[^/]*)", "dest": "/routes/rhizomes.js?slug=$slug" },
-    { "src": "/preview/(?<id>[^/]*)", "dest": "/routes/preview.js?id=$id" }
+    { "src": "/rhizomes/(?<slug>[^/]*)", "dest": "/routes/rhizomes.js?slug=$slug" }
   ],
   "env": {
-    "CONTENTFUL_SPACE": "@christopherknewton-contentful-space",
-    "CONTENTFUL_ACCESS_TOKEN": "@christopherknewton-contentful-access-token",
-    "CONTENTFUL_PREVIEW_ACCESS_TOKEN": "@christopherknewton-contentful-preview-access-token",
     "TUMBLR_API_KEY": "@christopherknewton-tumblr-api-key"
   }
 }
