@@ -4,35 +4,35 @@ import markdown from '../../lib/markdown';
 import externalLink from '../elements/external-link';
 import document from '../components/document';
 
-const rhizomeNode = nodeObject => ragtag`
-<div class="rhizome-node">
+const noteNode = nodeObject => ragtag`
+<div class="note-node">
   <h2>${nodeObject.url ? externalLink({ href: nodeObject.url, text: nodeObject.title }) : nodeObject.title}</h2>
   ${nodeObject.extract && `<p>${markdown(nodeObject.extract)}</p>`}
 </div>
 `;
 
-export default ({ rhizomeObject }) => {
+export default ({ noteObject }) => {
   const content = ragtag`
-  <article class="entry">
+  <article class="page">
 
-    <section class="entry--meta">
-      <span class="subhead"><a href="/rhizomes">Rhizomes</a></span>
-      <span class="subhead">${rhizomeObject.date}</span>
+    <section class="page--meta">
+      <span class="subhead"><a href="/notes">Notes</a></span>
+      <span class="subhead">${noteObject.date}</span>
     </section>
 
-    <section class="rhizome--node-graph"></section>
+    <section class="note--node-graph"></section>
 
-    <h1>${rhizomeObject.title}</h1>
-    ${rhizomeObject.description && `<p>${rhizomeObject.description}</p>`}
+    <h1>${noteObject.title}</h1>
+    ${noteObject.description && `<p>${noteObject.description}</p>`}
 
     <span class="subhead">Nodes</span>
-    <section class="entry--body">
-      ${rhizomeObject.nodes.map(nodeObject => rhizomeNode(nodeObject))}
+    <section class="page--body">
+      ${noteObject.nodes.map(nodeObject => noteNode(nodeObject))}
     </section>
 
     <script src="/static/lib/d3.v5.min.js"></script>
     <script>
-      const data = ${JSON.stringify(rhizomeObject)};
+      const data = ${JSON.stringify(noteObject)};
 
       const width = 200;
       const height = 200;
@@ -80,11 +80,11 @@ export default ({ rhizomeObject }) => {
             .attr("cy", d => d.y);
       });
 
-      document.body.querySelector('.rhizome--node-graph').append(svg.node());
+      document.body.querySelector('.note--node-graph').append(svg.node());
     </script>
 
   </article>
   `;
 
-  return document({ content, title: `${rhizomeObject.title} · Rhizomes` });
+  return document({ content, title: `${noteObject.title} · Notes` });
 };

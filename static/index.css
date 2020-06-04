@@ -225,30 +225,30 @@ main {
   margin-bottom: 3rem;
 }
 
-/* Generic Entry */
+/* Page */
 
-.entry {
+.page {
   margin-bottom: 8rem;
 }
 
-.entry--meta {
+.page--meta {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.entry--meta span {
+.page--meta span {
   margin-bottom: 0;
 }
 
-.entry h1 {
+.page h1 {
   margin-bottom: 2rem;
 }
 
-.entry p + h2,
-.entry dl + h2,
-.entry ol + h2,
-.entry ul + h2 {
+.page p + h2,
+.page dl + h2,
+.page ol + h2,
+.page ul + h2 {
   margin-top: 2rem;
 }
 
@@ -359,20 +359,20 @@ main {
   }
 }
 
-/* Rhizomes */
+/* Notes */
 
-.rhizome-index-item {
+.note-index-item {
   margin-bottom: 1rem;
 }
 
-.rhizome-index-item--title {
+.note-index-item--title {
   font-weight: var(--font-weight-bold);
 }
 
-.rhizome-node {
+.note-node {
   margin-bottom: 2rem;
 }
 
-.rhizome--node-graph svg {
+.note--node-graph svg {
   width: auto;
 }
