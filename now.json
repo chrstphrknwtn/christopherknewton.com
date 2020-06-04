@@ -12,7 +12,8 @@
     { "src": "/selection", "dest": "/routes/selection.js" },
     { "src": "/visual-reference", "dest": "/routes/tumblrs.js" },
     { "src": "/notes", "dest": "/routes/notes.js" },
-    { "src": "/notes/(?<slug>[^/]*)", "dest": "/routes/notes.js?slug=$slug" }
+    { "src": "/notes/(?<slug>[^/]*)", "dest": "/routes/notes.js?slug=$slug" },
+    { "src": "/(.*)", "status": 404, "dest": "/routes/404.js" }
   ],
   "env": {
     "TUMBLR_API_KEY": "@christopherknewton-tumblr-api-key"
