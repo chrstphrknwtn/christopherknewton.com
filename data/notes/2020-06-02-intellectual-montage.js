@@ -27,7 +27,7 @@ Eisenstein relates this to non-literary "writing" in pre-literate societies, suc
     {
       id: 'samsara-review',
       url: 'https://www.indiewire.com/2012/08/review-samsara-tells-the-story-of-our-world-with-stunning-visuals-spiritual-heft-106877/',
-      title: 'Samsara Review, Katie Walsh.',
+      title: 'Samsara (2011 film) Review, Katie Walsh.',
       extract: 'While the art is in the camera’s manipulation of images, the story is in the way these images are put together, edited to create sentences, paragraphs and pages of script simply through their juxtaposition. The film is told through the technique Soviet filmmaker Sergei Eisenstein described as “intellectual montage” nearly 100 years ago.'
     },
     {

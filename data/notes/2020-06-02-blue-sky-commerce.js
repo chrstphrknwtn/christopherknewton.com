@@ -6,7 +6,8 @@ export default {
     {
       id: 'sim-and-sim',
       url: 'https://en.wikipedia.org/wiki/Simulacra_and_Simulation',
-      title: 'Simulacra and Simulation'
+      title: 'Simulacra and Simulation',
+      extract: '...our current society has replaced all reality and meaning with symbols and signs, and that human experience is a simulation of reality.'
     },
     {
       id: 'semiotics',
@@ -16,7 +17,8 @@ export default {
     },
     {
       id: 'blue-skies',
-      title: 'Artificial blue skies in advertising'
+      title: 'Artificial blue skies in advertising',
+      extract: 'Real estate, holiday house, and even generic retail location photographs often have an obviously artificial blue sky.'
     },
     {
       id: 'paris-syndrome',
