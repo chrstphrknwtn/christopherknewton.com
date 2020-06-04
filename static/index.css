@@ -185,6 +185,8 @@ main {
 }
 
 .site-content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
@@ -219,9 +221,13 @@ main {
   margin-bottom: 0;
 }
 
-/* Index */
+/* Home */
 
-.index-intro {
+.home--main {
+  flex-grow: 1;
+}
+
+.home--intro {
   margin-bottom: 3rem;
 }
 
