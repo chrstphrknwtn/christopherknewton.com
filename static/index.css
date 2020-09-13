@@ -104,6 +104,11 @@ p {
   margin-bottom: 1rem;
 }
 
+p + p {
+  margin-top: -1rem;
+  text-indent: 1rem;
+}
+
 ol,
 ul {
   margin-bottom: 1rem;
@@ -225,6 +230,7 @@ main {
 
 .home--main {
   flex-grow: 1;
+  margin-bottom: 6rem;
 }
 
 .home--intro {
@@ -234,7 +240,7 @@ main {
 /* Page */
 
 .page {
-  margin-bottom: 8rem;
+  margin-bottom: 6rem;
 }
 
 .page--meta {

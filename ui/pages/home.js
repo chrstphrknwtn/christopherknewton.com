@@ -5,27 +5,14 @@ import externalLink from '../components/external-link';
 export default () => {
   const content = ragtag`
   <section class="home--main">
-    <p class="home--intro">I'm a developer from Melbourne with a <a href="/about">background</a> in design. I've been creating  interactive things for about ten years. These days I'm mostly building <em>&</em> maintaining ${externalLink({ href: 'https://nextjs.org', text: 'Next.js' })} apps.</p>
+    <p class="home--intro">
+      I know about <em><a href="/about">graphic design</a>,</em><br />
+      am interested in <em>art history,</em><br />
+      make <em>photographs,</em><br />
+      and implement <em>${externalLink({ href: 'https://github.com/chrstphrknwtn', text: 'computer interfaces' })}</em>.
+    </p>
 
-    <h3 class="subhead">Code</h3>
-    <ul class="linklist">
-      <li>${externalLink({ href: 'https://github.com/chrstphrknwtn', text: 'github.com/chrstphrknwtn' })}</li>
-      <li>${externalLink({ href: 'https://www.npmjs.com/~chrstphrknwtn', text: 'npmjs.com/~chrstphrknwtn' })}</li>
-    </ul>
-
-    <h3 class="subhead">Contact</h3>
-    <ul class="linklist">
-    <li><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></li>
-    <li><a href="tel:+61 476 214 645">+61 476 214 645</a></li>
-    </ul>
-
-    <h3 class="subhead">Education</h3>
-    <ul class="linklist">
-      <li><span class="tnum">2012 - 2013</span> · Master of Design (Dist), RMIT</li>
-      <li><span class="tnum">2004 - 2005</span> · Diploma of Graphic Art, RMIT</li>
-    </ul>
-
-    <h3 class="subhead">Visual reference · <a href="/visual-reference">Latest</a></h3>
+    <h2 class="subhead">Visual reference · <a href="/visual-reference">Latest</a></h2>
     <ul class="linklist">
       <li>${externalLink({ href: 'https://0x001a.com', text: '0x001a.com' })} · <em>graphic</em></li>
       <li>${externalLink({ href: 'https://0x002b.com', text: '0x002b.com' })} · <em>photography</em></li>
@@ -33,12 +20,11 @@ export default () => {
     </ul>
   </section>
 
-  <section class="home--colophon">
-    <h3 class="subhead">Colophon</h3>
+  <section>
+    <h2 class="subhead">Contact</h2>
     <ul class="linklist">
-      <li>Built with ${externalLink({ href: 'https://github.com/chrstphrknwtn/ragtag', text: 'Ragtag' })}</li>
-      <li>Typeset in ${externalLink({ href: 'http://www.georgduffner.at/ebgaramond/', text: 'EB Garamond' })}</li>
-      <li>Deployed on ${externalLink({ href: 'https://vercel.com', text: 'Vercel' })}</li>
+      <li><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></li>
+      <li><a href="tel:+61 476 214 645">+61 476 214 645</a></li>
     </ul>
   </section>
   `;
