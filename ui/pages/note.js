@@ -24,11 +24,13 @@ export default ({ noteObject }) => {
 
     <section class="page--body">
       <h1 class="note--title">${noteObject.title}</h1>
-      ${noteObject.description && `<p>${noteObject.description}</p>`}
+      ${noteObject.description && `<div class="note--description">${markdown(noteObject.description)}</div>`}
 
-      <span class="subhead note--nodes-subhead">Nodes</span>
+      ${noteObject.nodes.length > 0 && ragtag`
+        <h2 class="subhead note--nodes-subhead">Nodes</h2>
+        ${noteObject.nodes.map(nodeObject => noteNode(nodeObject))}
+      `}
 
-      ${noteObject.nodes.map(nodeObject => noteNode(nodeObject))}
     </section>
 
     <script src="/static/lib/d3.v5.min.js"></script>
