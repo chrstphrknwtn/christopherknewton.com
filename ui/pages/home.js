@@ -18,9 +18,7 @@ export default () => {
       <li>${externalLink({ href: 'https://0x002b.com', text: '0x002b.com' })} · <em>photography</em></li>
       <li>${externalLink({ href: 'https://0x001e.com', text: '0x001e.com' })} · <em>painting</em></li>
     </ul>
-  </section>
-
-  <section>
+    
     <h2 class="subhead">Contact</h2>
     <ul class="linklist">
       <li><a href="mailto:christopher.k.newton@me.com">christopher.k.newton@me.com</a></li>
