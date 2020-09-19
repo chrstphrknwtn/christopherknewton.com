@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app';
-import useProgress from '../lib/progress';
+import useProgress from '../components/progress';
 
 import '../styles/global.css';
 

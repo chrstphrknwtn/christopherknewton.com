@@ -5,7 +5,7 @@ import ExternalLink from '../components/external-link';
 
 const AboutPage = () => (
   <Container isIndex>
-    <p style={{ marginBottom: '3rem' }}>
+    <p>
       I know about{' '}
       <em>
         <Link href="/about">
