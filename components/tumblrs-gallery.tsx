@@ -11,7 +11,7 @@ const blogDescriptors = {
   '0x001e': 'painting',
 };
 
-const handler = props => {
+const handler = (props: any) => {
   const doc = document;
 
   const html = doc.documentElement;
@@ -38,11 +38,11 @@ const handler = props => {
   const scroll = getScrollUnitInterval();
   const columnMaxHeight = columnWrapper.clientHeight;
 
-  columns.forEach(col => {
+  columns.forEach((col: any) => {
     const delta = columnMaxHeight - col.clientHeight;
 
     if (delta > 0) {
-      col.style.transform = 'translateY(' + delta * scroll + 'px)';
+      col.style.transform = `translateY(${delta * scroll}px)`;
     }
   });
 };

@@ -9,10 +9,12 @@
     "build": "next build"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.20.0",
     "classnames": "^2.2.6",
-    "copyright": "^0.0.2",
+    "copyright": "^0.0.3",
+    "import": "^0.0.6",
     "next": "^9.5.3",
+    "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
