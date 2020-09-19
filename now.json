@@ -1,21 +1,4 @@
 {
   "version": 2,
-  "regions": ["syd1"],
-  "builds": [
-    { "src": "/routes/*.js", "use": "@now/node" },
-    { "src": "/static/**/*", "use": "@now/static" }
-  ],
-  "routes" : [
-    { "handle": "filesystem" },
-    { "src": "/", "dest": "/routes/home.js" },
-    { "src": "/about", "dest": "/routes/about.js" },
-    { "src": "/selection", "dest": "/routes/selection.js" },
-    { "src": "/visual-reference", "dest": "/routes/tumblrs.js" },
-    { "src": "/notes", "dest": "/routes/notes.js" },
-    { "src": "/notes/(?<slug>[^/]*)", "dest": "/routes/notes.js?slug=$slug" },
-    { "src": "/(.*)", "status": 404, "dest": "/routes/404.js" }
-  ],
-  "env": {
-    "TUMBLR_API_KEY": "@christopherknewton-tumblr-api-key"
-  }
+  "regions": ["syd1"]
 }
