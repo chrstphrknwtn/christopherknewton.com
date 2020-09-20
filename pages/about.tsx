@@ -12,9 +12,8 @@ const AboutPage = () => (
     <h2 className="subhead">Background</h2>
     <p>
       Between 2005 and 2010 I freelanced in Melbourne and London as a graphic
-      designer on projects for The Age newspaper, Converse, Disney, Fujifilm,
-      Globe Shoes, Kodak, Land Rover, Levi's, Target, Topshop, Vodafone and
-      others.
+      designer on projects for Converse, Disney, Fujifilm, Kodak, Land Rover,
+      Levi's, Tesco, Topshop, Vodafone and others.
     </p>
 
     <p>
@@ -32,15 +31,15 @@ const AboutPage = () => (
 
     <p>
       Over 2012 and 2013 I freelanced as a digital designer and developer on
-      projects for Mercedes Benz, National Australia Bank, and TAC Victoria at{' '}
+      projects for Mercedes Benz and National Australia Bank at{' '}
       <ExternalLink href="https://clemengerbbdo.com.au">
         Clemenger BBDO
       </ExternalLink>
-      ; Ford, La Trobe University, and Shell at{' '}
+      , Ford, La Trobe University, and Shell at{' '}
       <ExternalLink href="https://www.wundermanthompson.com/australia">
         JWT
-      </ExternalLink>
-      ; Holden, Formula One, and Melbourne University at{' '}
+      </ExternalLink>{' '}
+      and Holden, Formula One, and the University of Melbourne at{' '}
       <ExternalLink href="https://ajfpartnership.com.au">AJF</ExternalLink>.
     </p>
 
@@ -53,11 +52,15 @@ const AboutPage = () => (
     <h2 className="subhead">Education</h2>
     <ul className="linklist">
       <li>
+        <span className="tnum">2021 - 2022</span> · Grad Dip Arts (Art History),
+        University of Melbourne
+      </li>
+      <li>
         <span className="tnum">2012 - 2013</span> · Master of Design (Graphic
         Communication), RMIT
       </li>
       <li>
-        <span className="tnum">2004 - 2005</span> · Dip Art (Graphic Art), RMIT
+        <span className="tnum">2004 - 2005</span> · Dip Arts (Graphic Art), RMIT
       </li>
     </ul>
   </Container>
