@@ -9,6 +9,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@types/nprogress": "^0.2.0",
     "axios": "^0.20.0",
     "classnames": "^2.2.6",
     "copyright": "^0.0.5",
