@@ -8,7 +8,7 @@ const AboutPage = () => (
     <p>
       I know about{' '}
       <em>
-        <Link href="/about">
+        <Link href="/about#graphic-design">
           <a>graphic design</a>
         </Link>
         ,
@@ -20,9 +20,7 @@ const AboutPage = () => (
       <br />
       and implement{' '}
       <em>
-        <ExternalLink href="https://github.com/chrstphrknwtn">
-          computer interfaces
-        </ExternalLink>
+        <Link href="/about#interfaces">computer interfaces</Link>
       </em>
       .
     </p>

@@ -1,20 +1,23 @@
-@import "https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css";
-@import "https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css";
+@import 'https://unpkg.com/modern-normalize@0.6.0/modern-normalize.css';
+@import 'https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css';
 
 :root {
+  --rem: 17px;
   --base-font-features: 'onum', 'pnum';
   --font-weight-regular: 400;
   --font-weight-bold: 500;
   --foreground-color: black;
   --background-color: white;
-  --link-background-color: #f4f4f4;
+  --link-background-color: rgba(0, 0, 0, 0.05);
+  --mark-background-color: hsl(64, 100%, 93%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-color: white;
     --background-color: #010101;
-    --link-background-color: #212121;
+    --link-background-color: rgba(255, 255, 255, 0.1);
+    --mark-background-color: hsl(0, 90%, 9%);
   }
 }
 
@@ -26,7 +29,7 @@
 
 html {
   height: 100%;
-  font-size: 17px;
+  font-size: var(--rem);
   line-height: 1.57;
 }
 
@@ -34,6 +37,7 @@ body {
   height: 100%;
   margin: 0;
   color: var(--foreground-color);
+  font-size: var(--rem);
   font-weight: var(--font-weight-regular);
   font-family: 'EB Garamond', serif;
   line-height: inherit;
@@ -44,7 +48,7 @@ body {
 }
 
 #__next {
-  height: 100%; 
+  height: 100%;
 }
 
 /* Typography */
@@ -73,10 +77,10 @@ h2 {
 .subhead {
   display: block;
   margin-bottom: 1rem;
-  font-weight: var(--font-weight-regular);
   font-size: 0.9rem;
+  font-weight: var(--font-weight-regular);
   font-feature-settings: var(--base-font-features), 'smcp', 'c2sc';
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 p + .subhead,
@@ -103,8 +107,9 @@ dd {
   margin-left: 1rem;
 }
 
-mark {
-  background-color: #ffff33;
+mark,
+.mark {
+  background-color: var(--mark-background-color);
 }
 
 strong {
@@ -174,12 +179,10 @@ ul > li::before {
 
 #nprogress .bar {
   background: var(--foreground-color);
-
   position: fixed;
   z-index: 1031;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 2px;
 }
