@@ -1,11 +1,20 @@
 import axios from 'axios';
+import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
 import Container from '../components/container';
 import TumblrsGallery from '../components/tumblrs-gallery';
 
-const TumblrsPage = ({ tumblrs, error }) => (
+interface Props {
+  tumblrs: Array<object>;
+  error: string;
+}
+
+const TumblrsPage = ({ tumblrs, error }: Props) => (
   <Container isWide>
+    <Head>
+      <title>Visual reference · Christopher Newton</title>
+    </Head>
     {!tumblrs && error && <p>Whoops, something is broken...</p>}
     {tumblrs && (
       <>

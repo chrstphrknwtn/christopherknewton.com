@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import cx from 'classnames';
 import c from 'copyright';
@@ -5,10 +6,10 @@ import c from 'copyright';
 import ExternalLink from './external-link';
 import styles from './container.module.css';
 
-const copyrightString: any = c({
+const copyrightString = c({
   name: 'Christopher Newton',
   short: true,
-  startYear: 1981,
+  startYear: 1981
 });
 
 interface Props {
@@ -19,6 +20,9 @@ interface Props {
 
 const Container = ({ children, isIndex, isWide }: Props) => (
   <main className={cx(styles.container, { [styles.wide]: isWide })}>
+    <Head>
+      <title>Christopher Newton</title>
+    </Head>
     <header className={styles.header}>
       {isIndex ? (
         <h1>Christopher Newton</h1>
