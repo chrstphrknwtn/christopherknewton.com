@@ -36,10 +36,10 @@ const handler = (props: any) => {
   }
 
   const scroll = getScrollUnitInterval();
-  const columnMaxHeight = columnWrapper.clientHeight;
+  const columnMaxHeight = columnWrapper?.clientHeight;
 
   columns.forEach((col: any) => {
-    const delta = columnMaxHeight - col.clientHeight;
+    const delta = columnMaxHeight ? columnMaxHeight - col.clientHeight : 0;
 
     if (delta > 0) {
       col.style.transform = `translateY(${delta * scroll}px)`;
@@ -70,7 +70,7 @@ const TumblrsGallery = ({ tumblrs }: any) => {
             <ExternalLink href={tumblr.blog.url}>
               {tumblr.blog.name}
             </ExternalLink>{' '}
-            · <em>{blogDescriptors[tumblr.blog.name]}</em>
+            · <em>{blogDescriptors[tumblr.blog.name as keyof typeof blogDescriptors]}</em>
           </p>
           {tumblr.posts.map((post: any) => (
             <TumblrsPost key={post.id} post={post} />
