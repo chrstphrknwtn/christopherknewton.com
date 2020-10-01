@@ -33,7 +33,7 @@ const AboutPage = () => (
     </h2>
     <ul className="linklist">
       <li>
-        <ExternalLink href="https://0x001a.com">0x002b.com</ExternalLink> ·{' '}
+        <ExternalLink href="https://0x001a.com">0x001a.com</ExternalLink> ·{' '}
         <em>graphic</em>
       </li>
       <li>
