@@ -20,7 +20,7 @@ const AboutPage = () => (
       <br />
       and implement{' '}
       <em>
-        <Link href="/about#interfaces">computer interfaces</Link>
+        <Link href="/about#interfaces">user interfaces</Link>
       </em>
       .
     </p>
@@ -49,11 +49,12 @@ const AboutPage = () => (
     <h2 className="subhead">Contact</h2>
     <ul className="linklist">
       <li>
-        <a href="mailto:christopher.k.newton@me.com">
-          christopher.k.newton@me.com
+        <a href="mailto:hello@christopherknewton.com">
+          hello@christopherknewton.com
         </a>
       </li>
       <li>
+        <a href="tel:+61 476 214 645">+1 206 698 6267</a> /{' '}
         <a href="tel:+61 476 214 645">+61 476 214 645</a>
       </li>
     </ul>

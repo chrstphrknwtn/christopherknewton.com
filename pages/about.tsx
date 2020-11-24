@@ -22,7 +22,7 @@ const AboutPage = () => {
       <p>
         <span className={markIfHash('interfaces')}>
           I currently live in Seattle and work on a small SaaS startup, mostly
-          implementing interfaces with React and dabbling in Swift and Python.
+          implementing user interfaces with React.
         </span>
       </p>
 
