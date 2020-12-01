@@ -16,7 +16,10 @@ const AboutPage = () => (
       <br />
       am interested in <em>art history,</em>
       <br />
-      make <em>photographs,</em>
+      make{' '}
+      <em>
+        <Link href="/photographs">photographs</Link>,
+      </em>
       <br />
       and implement{' '}
       <em>
