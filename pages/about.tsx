@@ -43,7 +43,8 @@ const AboutPage = () => {
         <span className={markIfHash('interfaces')}>
           From late 2014 to early 2018 I worked for a Berlin-based fitness
           startup as a product designer, designing and implementing research
-          prototypes and interfaces on various hardware and software platforms.
+          prototypes and user interfaces on various hardware and software
+          platforms.
         </span>
       </p>
 
