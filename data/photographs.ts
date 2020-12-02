@@ -41,6 +41,16 @@ const photographs: Array<Photograph> = [
     title: 'Solheimajokull'
   },
   {
+    year: 2018,
+    slug: '2018-graduation-1',
+    title: 'Graduation 1'
+  },
+  {
+    year: 2018,
+    slug: '2018-graduation-2',
+    title: 'Graduation 2'
+  },
+  {
     year: 2010,
     slug: '2010-9600-meilleur',
     title: '9600 Meilleur'
