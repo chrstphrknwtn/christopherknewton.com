@@ -7,6 +7,16 @@ export type Photograph = {
 const photographs: Array<Photograph> = [
   {
     year: 2020,
+    slug: '2020-offworld-1',
+    title: 'Offworld 1'
+  },
+  {
+    year: 2020,
+    slug: '2020-offworld-2',
+    title: 'Offworld 2'
+  },
+  {
+    year: 2020,
     slug: '2020-main-street-usa-1',
     title: 'Main Street USA 1'
   },
