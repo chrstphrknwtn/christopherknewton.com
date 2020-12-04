@@ -6,19 +6,19 @@ import ExternalLink from '../components/external-link';
 const AboutPage = () => (
   <Container isIndex>
     <p>
-      I know about{' '}
+      I make{' '}
+      <em>
+        <Link href="/photographs">photographs</Link>,
+      </em>
+      <br />
+      am interested in <em>art history,</em>
+      <br />
+      know about{' '}
       <em>
         <Link href="/about#graphic-design">
           <a>graphic design</a>
         </Link>
         ,
-      </em>
-      <br />
-      am interested in <em>art history,</em>
-      <br />
-      make{' '}
-      <em>
-        <Link href="/photographs">photographs</Link>,
       </em>
       <br />
       and implement{' '}
