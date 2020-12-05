@@ -11,8 +11,6 @@ const AboutPage = () => (
         <Link href="/photographs">photographs</Link>,
       </em>
       <br />
-      am interested in <em>art history,</em>
-      <br />
       know about{' '}
       <em>
         <Link href="/about#graphic-design">
