@@ -19,6 +19,12 @@
   padding-bottom: 3rem;
 }
 
+@media (min-width: 646px) {
+  .header {
+    padding-top: 3rem;
+  }
+}
+
 .header h1,
 .header h2 {
   margin-bottom: 0;
