@@ -2,10 +2,9 @@ import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import Container from '../../components/container';
+import PhotographFigure from '../../components/photograph-figure';
 
 import photographs, { Photograph } from '../../data/photographs';
-
-import styles from './photographs.module.css';
 
 type Props = {
   photograph: Photograph;
@@ -30,13 +29,7 @@ const PhotographsPage = ({ photograph }: Props) => (
       </Link>
     </span>
 
-    <figure className={styles.photographFigure}>
-      <img src={`/images/${photograph.slug}.jpg`} alt={photograph.title} />
-    </figure>
-
-    <figcaption>
-      {photograph.title}, {photograph.year}.
-    </figcaption>
+    <PhotographFigure photograph={photograph} />
   </Container>
 );
 
