@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@types/nprogress": "^0.2.0",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "copyright": "^0.0.5",
     "import": "^0.0.6",
