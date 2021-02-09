@@ -161,6 +161,7 @@ ul > li::before {
   margin-top: 0;
   padding: 0;
   list-style: none;
+  max-width: unset !important;
 }
 
 .linklist li::before {
@@ -169,6 +170,18 @@ ul > li::before {
 
 .linklist li > h3 {
   margin-bottom: 0;
+}
+
+/* Page Section */
+
+.section {
+  margin-top: 3rem;
+}
+
+/* Readings page */
+
+.reading-group {
+  margin-top: 2rem;
 }
 
 /* NProgress */
