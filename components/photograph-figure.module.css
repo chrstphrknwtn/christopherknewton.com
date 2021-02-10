@@ -5,7 +5,7 @@
 .photographFigure img {
   width: 100%;
   max-width: 1024px;
-  max-height: 80vh;
+  max-height: 90vh;
   object-fit: contain;
   object-position: 0 0;
 }
