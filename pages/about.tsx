@@ -16,47 +16,25 @@ const AboutPage = () => {
       <Head>
         <title>About · Christopher Newton</title>
       </Head>
+
       <h2 className="subhead" id="interfaces">
-        Now
+        <span className={markIfHash('interfaces')}>
+          Product Design, 2014 &mdash; 2021.
+        </span>
       </h2>
       <p>
         <span className={markIfHash('interfaces')}>
-          I currently live in Seattle and work on a small SaaS startup, mostly
-          implementing user interfaces with React <em>&amp;</em> TypeScript.
-        </span>
-      </p>
-
-      <ul className="linklist">
-        <li>
-          <span className={markIfHash('interfaces')}>
-            <ExternalLink
-              href="https://github.com/chrstphrknwtn"
-              title="github.com/chrstphrknwtn">
-              github/chrstphrknwtn
-            </ExternalLink>
-          </span>
-        </li>
-      </ul>
-
-      <h2 className="subhead">Somewhat recently</h2>
-      <p>
-        <span className={markIfHash('interfaces')}>
-          From late 2014 to early 2018 I worked for a Berlin-based fitness
-          startup as a product designer, designing and implementing research
-          prototypes and user interfaces on various hardware and software
-          platforms.
+          I worked as a product designer from late 2014 to early 2021 in Berlin
+          and Melbourne, designing and implementing research prototypes and user
+          interfaces for various native and web platforms.
         </span>
       </p>
 
       <h2 className="subhead" id="graphic-design">
-        Ages ago
+        <span className={markIfHash('graphic-design')}>
+          Graphic design, 2004 &mdash; 2013.
+        </span>
       </h2>
-      <p>
-        Following secondary school, before studying graphic art, I spent three
-        years in black <em>&amp;</em> white and colour darkrooms making
-        photographs. Then digital cameras came along and ruined all the fun.
-      </p>
-
       <p>
         <span className={markIfHash('graphic-design')}>
           From 2005 to 2013 I worked in Melbourne, London, Montréal and Toronto
@@ -71,16 +49,12 @@ const AboutPage = () => {
       <h2 className="subhead">Education</h2>
       <ul className="linklist">
         <li>
-          <span className={markIfHash('graphic-design')}>
-            <span className="tnum">2012 - 2013</span> · Master of Design
-            (Graphic Communication), RMIT
-          </span>
+          <span className="tnum">2012 - 2013</span> · Master of Design (Graphic
+          Communication), RMIT
         </li>
         <li>
-          <span className={markIfHash('graphic-design')}>
-            <span className="tnum">2004 - 2005</span> · Dip Arts (Graphic Art),
-            RMIT
-          </span>
+          <span className="tnum">2004 - 2005</span> · Dip Arts (Graphic Art),
+          RMIT
         </li>
       </ul>
     </Container>

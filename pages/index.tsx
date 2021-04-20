@@ -8,20 +8,18 @@ const AboutPage = () => (
     <p>
       I make{' '}
       <em>
-        <Link href="/photographs">photographs</Link>,
+        <Link href="/photographs">photographs</Link>
       </em>
-      <br />
-      know about{' '}
+      .
+      <br />I know about{' '}
       <em>
         <Link href="/about#graphic-design">
           <a>graphic design</a>
+        </Link>{' '}
+        and{' '}
+        <Link href="/about#interfaces">
+          <a>user interfaces</a>
         </Link>
-        ,
-      </em>
-      <br />
-      and implement{' '}
-      <em>
-        <Link href="/about#interfaces">user interfaces</Link>
       </em>
       .
     </p>
