@@ -9,9 +9,10 @@ const blogDescriptors = {
   '0x001a': 'graphic',
   '0x002b': 'photography',
   '0x001e': 'painting',
+  '0x003d': 'architecture'
 };
 
-const handler = (props: any) => {
+const handler = () => {
   const doc = document;
 
   const html = doc.documentElement;
@@ -70,7 +71,14 @@ const TumblrsGallery = ({ tumblrs }: any) => {
             <ExternalLink href={tumblr.blog.url}>
               {tumblr.blog.name}
             </ExternalLink>{' '}
-            · <em>{blogDescriptors[tumblr.blog.name as keyof typeof blogDescriptors]}</em>
+            ·{' '}
+            <em>
+              {
+                blogDescriptors[
+                  tumblr.blog.name as keyof typeof blogDescriptors
+                ]
+              }
+            </em>
           </p>
           {tumblr.posts.map((post: any) => (
             <TumblrsPost key={post.id} post={post} />

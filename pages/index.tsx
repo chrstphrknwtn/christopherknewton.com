@@ -45,6 +45,10 @@ const AboutPage = () => (
         <ExternalLink href="https://0x001e.com">0x001e.com</ExternalLink> ·{' '}
         <em>painting</em>
       </li>
+      <li>
+        <ExternalLink href="https://0x003d.com">0x003d.com</ExternalLink> ·{' '}
+        <em>architecture</em>
+      </li>
     </ul>
 
     <h2 className="subhead">Contact</h2>

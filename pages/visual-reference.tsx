@@ -27,7 +27,7 @@ const TumblrsPage = ({ tumblrs, error }: Props) => (
 
 export const getServerSideProps: GetServerSideProps = async () => {
   try {
-    const requests = ['0x001a', '0x002b', '0x001e'].map(blogName => {
+    const requests = ['0x001a', '0x002b', '0x001e', '0x003d'].map(blogName => {
       return axios(
         `https://api.tumblr.com/v2/blog/${blogName}.tumblr.com/posts?api_key=${process.env.TUMBLR_API_KEY}`
       );
