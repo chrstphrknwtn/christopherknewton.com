@@ -6,23 +6,22 @@
 }
 
 .column {
-  width: 33.33%;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 
 .column:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 
 .column:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .post {
   position: relative;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .post img {
