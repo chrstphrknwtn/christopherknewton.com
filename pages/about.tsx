@@ -26,7 +26,7 @@ const AboutPage = () => {
         <span className={markIfHash('interfaces')}>
           I worked as a product designer from late 2014 to early 2021 in Berlin
           and Melbourne, designing and implementing research prototypes and user
-          interfaces for various native and web platforms.
+          interfaces for native and web.
         </span>
       </p>
 
