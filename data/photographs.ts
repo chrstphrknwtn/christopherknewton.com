@@ -18,12 +18,7 @@ const photographs: Array<Photograph> = [
   {
     year: 2020,
     slug: '2020-main-street-usa-1',
-    title: 'Main Street USA 1'
-  },
-  {
-    year: 2020,
-    slug: '2020-main-street-usa-2',
-    title: 'Main Street USA 2'
+    title: 'Forth Ave, Seattle'
   },
   {
     year: 2020,
