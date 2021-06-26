@@ -7,6 +7,11 @@ export type Photograph = {
 const photographs: Array<Photograph> = [
   {
     year: 2021,
+    slug: '2021-mopop-3',
+    title: 'MoPOP Museum 3'
+  },
+  {
+    year: 2021,
     slug: '2021-mopop-2',
     title: 'MoPOP Museum 2'
   },
@@ -17,8 +22,13 @@ const photographs: Array<Photograph> = [
   },
   {
     year: 2021,
-    slug: '2021-ferry-sunset',
-    title: 'Ferry Sunset'
+    slug: '2021-ferry-sunset-2',
+    title: 'Ferry Sunset 2'
+  },
+  {
+    year: 2021,
+    slug: '2021-ferry-sunset-1',
+    title: 'Ferry Sunset 1'
   },
   {
     year: 2021,
@@ -44,6 +54,16 @@ const photographs: Array<Photograph> = [
     year: 2020,
     slug: '2020-main-street-usa-1',
     title: 'Forth Ave, Seattle'
+  },
+  {
+    year: 2020,
+    slug: '2020-eastern-wa-2',
+    title: 'Eastern Washington 2'
+  },
+  {
+    year: 2020,
+    slug: '2020-eastern-wa-1',
+    title: 'Eastern Washington 1'
   },
   {
     year: 2020,
