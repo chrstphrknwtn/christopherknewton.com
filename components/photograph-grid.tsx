@@ -14,7 +14,7 @@ const PhotographGrid = ({ photographs }: Props) => (
         <Link href={`/photographs/${photograph.slug}`}>
           <a>
             <img
-              src={`/images/${photograph.slug}.jpg`}
+              src={`/images/${photograph.slug}-thumb.jpg`}
               alt={photograph.title}
             />
           </a>
