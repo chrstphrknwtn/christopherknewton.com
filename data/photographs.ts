@@ -6,6 +6,31 @@ export type Photograph = {
 
 const photographs: Array<Photograph> = [
   {
+    year: 2021,
+    slug: '2021-mopop-2',
+    title: 'MoPOP Museum 2'
+  },
+  {
+    year: 2021,
+    slug: '2021-mopop-1',
+    title: 'MoPOP Museum 1'
+  },
+  {
+    year: 2021,
+    slug: '2021-ferry-sunset',
+    title: 'Ferry Sunset'
+  },
+  {
+    year: 2021,
+    slug: '2021-urban-scene',
+    title: 'Urban Scene'
+  },
+  {
+    year: 2020,
+    slug: '2020-offworld-alternate',
+    title: 'Offworld Alternate'
+  },
+  {
     year: 2020,
     slug: '2020-offworld-1',
     title: 'Offworld 1'
