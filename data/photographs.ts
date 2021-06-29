@@ -72,6 +72,11 @@ const photographs: Array<Photograph> = [
   },
   {
     year: 2020,
+    slug: '2020-parliament-and-palm-trees',
+    title: 'Parliament and Palm Trees'
+  },
+  {
+    year: 2020,
     slug: '2020-indexical-1',
     title: 'Indexical 1'
   },
