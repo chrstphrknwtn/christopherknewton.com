@@ -1,53 +1,31 @@
 import Link from 'next/link';
 
 import Container from '../components/container';
-import ExternalLink from '../components/external-link';
 
 const AboutPage = () => (
   <Container isIndex>
     <p>
       I make{' '}
-      <em>
-        <Link href="/photographs">photographs</Link>
-      </em>
+      <Link href="/photographs">
+        <a>
+          <em>photographs</em>
+        </a>
+      </Link>
       .
       <br />I know about{' '}
-      <em>
-        <Link href="/about#graphic-design">
-          <a>graphic design</a>
-        </Link>{' '}
-        and{' '}
-        <Link href="/about#interfaces">
-          <a>user interfaces</a>
-        </Link>
-      </em>
+      <Link href="/about#graphic-design">
+        <a>
+          <em>graphic design</em>
+        </a>
+      </Link>{' '}
+      and{' '}
+      <Link href="/about#interfaces">
+        <a>
+          <em>user interfaces</em>
+        </a>
+      </Link>
       .
     </p>
-
-    <h2 className="subhead">
-      Visual reference ·{' '}
-      <Link href="/visual-reference">
-        <a>Latest</a>
-      </Link>
-    </h2>
-    <ul className="linklist">
-      <li>
-        <ExternalLink href="https://0x001a.com">0x001a.com</ExternalLink> ·{' '}
-        <em>graphic</em>
-      </li>
-      <li>
-        <ExternalLink href="https://0x002b.com">0x002b.com</ExternalLink> ·{' '}
-        <em>photography</em>
-      </li>
-      <li>
-        <ExternalLink href="https://0x001e.com">0x001e.com</ExternalLink> ·{' '}
-        <em>painting</em>
-      </li>
-      <li>
-        <ExternalLink href="https://0x003d.com">0x003d.com</ExternalLink> ·{' '}
-        <em>architecture</em>
-      </li>
-    </ul>
 
     <h2 className="subhead">Contact</h2>
     <ul className="linklist">
