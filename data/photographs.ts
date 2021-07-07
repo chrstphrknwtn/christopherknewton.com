@@ -105,6 +105,7 @@ const photographs: Array<Photograph> = [
     slug: '2019-solheimajokull',
     title: 'Solheimajokull'
   },
+  /*
   {
     year: 2018,
     slug: '2018-graduation-1',
@@ -115,6 +116,7 @@ const photographs: Array<Photograph> = [
     slug: '2018-graduation-2',
     title: 'Graduation 2'
   },
+  */
   {
     year: 2010,
     slug: '2010-9600-meilleur',
