@@ -22,6 +22,16 @@ const photographs: Array<Photograph> = [
   },
   {
     year: 2021,
+    slug: '2021-ventura-ca-2',
+    title: 'Ventura California 2'
+  },
+  {
+    year: 2021,
+    slug: '2021-ventura-ca-1',
+    title: 'Ventura California 1'
+  },
+  {
+    year: 2021,
     slug: '2021-ferry-sunset-2',
     title: 'Ferry Sunset 2'
   },
