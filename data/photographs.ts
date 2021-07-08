@@ -7,6 +7,12 @@ export type Photograph = {
 const photographs: Array<Photograph> = [
   {
     year: 2021,
+    slug: '2021-mopop-4',
+    title: 'MoPOP Museum 4'
+  },
+  /*
+  {
+    year: 2021,
     slug: '2021-mopop-3',
     title: 'MoPOP Museum 3'
   },
@@ -15,6 +21,7 @@ const photographs: Array<Photograph> = [
     slug: '2021-mopop-2',
     title: 'MoPOP Museum 2'
   },
+  */
   {
     year: 2021,
     slug: '2021-mopop-1',
