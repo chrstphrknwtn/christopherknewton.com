@@ -11,7 +11,7 @@ const AboutPage = () => {
       <p>
         This website is a place to assemble photographs as I produce them in a
         stream of consciousness-like manner, actively and retroactively.
-        Eventually more coherent projects may materialise.
+        Eventually coherent projects may materialise.
       </p>
 
       <h2 className="subhead">Education</h2>
