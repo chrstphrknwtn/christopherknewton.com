@@ -21,7 +21,6 @@ const copyrightString = c({
   const date = new Date();
   const author = {
     name: 'Christopher Newton',
-    email: 'hello@christopherknewton.com',
     link: baseUrl
   };
 
@@ -44,8 +43,7 @@ const copyrightString = c({
     const url = `${baseUrl}/${photograph.slug}`;
     feed.addItem({
       title: `${photograph.title}, ${photograph.year}`,
-      description: `${photograph.title}, ${photograph.year}`,
-      content: `<figure>
+      description: `<figure>
         <img src="${baseUrl}/images/${photograph.slug}.jpg" alt="${photograph.title}" />
       </figure>
       <figcaption>${photograph.title}, ${photograph.year}.</figcaption>`,
