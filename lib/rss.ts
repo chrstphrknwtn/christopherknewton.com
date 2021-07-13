@@ -21,7 +21,6 @@ const copyrightString = c({
   const date = new Date();
   const author = {
     name: 'Christopher Newton',
-    email: 'hello@christopherknewton.com',
     link: baseUrl
   };
 
@@ -49,7 +48,7 @@ const copyrightString = c({
       title: `${photograph.title}, ${photograph.year}`,
       description: `${photograph.title}, ${photograph.year}`,
       content: `<figure>
-        <img src="/images/${photograph.slug}.jpg" alt="${photograph.title}" />
+        <img src="${baseUrl}/images/${photograph.slug}.jpg" alt="${photograph.title}" />
       </figure>
       <figcaption>${photograph.title}, ${photograph.year}.</figcaption>
       `,
@@ -60,10 +59,10 @@ const copyrightString = c({
     });
   });
 
-  fs.mkdirSync('./public/rss', { recursive: true });
-  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
-  fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
-  fs.writeFileSync('./public/rss/feed.json', feed.json1());
+  fs.mkdirSync('./public/feed', { recursive: true });
+  fs.writeFileSync('./public/feed/feed.xml', feed.rss2());
+  fs.writeFileSync('./public/feed/atom.xml', feed.atom1());
+  fs.writeFileSync('./public/feed/feed.json', feed.json1());
 })();
 
 export {};
