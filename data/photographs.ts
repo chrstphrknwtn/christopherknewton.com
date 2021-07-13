@@ -59,8 +59,8 @@ const photographs: Array<Photograph> = [
   },
   {
     year: 2021,
-    slug: '2021-urban-scene',
-    title: 'Urban Scene'
+    slug: '2021-northern-hemisphere-scene-1',
+    title: 'Northern Hemisphere Scene 1'
   },
   {
     year: 2020,
