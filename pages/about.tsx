@@ -16,13 +16,21 @@ const AboutPage = () => {
 
       <h2 className="subhead">Education</h2>
       <ul className="linklist">
-        <li>
-          <span className="tnum">2012 - 2013</span> · Master of Design (Graphic
-          Communication), RMIT
+        <li className="flexListItem">
+          <div className="tnum">2012 - 2013</div>
+          <div>
+            Master of Design (Graphic Communication)
+            <br />
+            <em>Royal Melbourne Institute of Technology</em>
+          </div>
         </li>
-        <li>
-          <span className="tnum">2004 - 2005</span> · Dip Arts (Graphic Art),
-          RMIT
+        <li className="flexListItem">
+          <div className="tnum">2004 - 2005</div>
+          <div>
+            Dip Arts (Graphic Art),
+            <br />
+            <em>Royal Melbourne Institute of Technology</em>
+          </div>
         </li>
       </ul>
 

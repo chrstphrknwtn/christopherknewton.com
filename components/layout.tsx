@@ -47,11 +47,11 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
         {isIndex ? (
           <h1>Christopher Newton</h1>
         ) : (
-          <h2>
+          <h1>
             <Link href="/">
               <a>Christopher Newton</a>
             </Link>
-          </h2>
+          </h1>
         )}
         <ul>
           {navigationLinks.map(link => (
