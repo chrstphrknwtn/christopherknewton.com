@@ -42,6 +42,16 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
       })}>
       <Head>
         <title>Christopher Newton</title>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          href="https://christopherknewton.com/rss/feed.xml"
+        />
+        <link
+          rel="alternate"
+          type="application/atom+xml"
+          href="https://christopherknewton.com/rss/atom.xml"
+        />
       </Head>
       <header className={styles.header}>
         {isIndex ? (

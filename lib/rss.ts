@@ -21,6 +21,7 @@ const copyrightString = c({
   const date = new Date();
   const author = {
     name: 'Christopher Newton',
+    email: 'hello@christopherknewton.com',
     link: baseUrl
   };
 
@@ -30,13 +31,10 @@ const copyrightString = c({
     id: baseUrl,
     link: baseUrl,
     language: 'en',
-    // image: `${baseUrl}/images/logo.svg`,
-    // favicon: `${baseUrl}/favicon.ico`,
     copyright: copyrightString,
     updated: date,
     feedLinks: {
-      rss2: `${baseUrl}/rss/feed.xml`,
-      json: `${baseUrl}/rss/feed.json`,
+      rss2: `${baseUrl}/rss.xml`,
       atom: `${baseUrl}/rss/atom.xml`
     },
     author
@@ -50,8 +48,7 @@ const copyrightString = c({
       content: `<figure>
         <img src="${baseUrl}/images/${photograph.slug}.jpg" alt="${photograph.title}" />
       </figure>
-      <figcaption>${photograph.title}, ${photograph.year}.</figcaption>
-      `,
+      <figcaption>${photograph.title}, ${photograph.year}.</figcaption>`,
       id: url,
       link: url,
       author: [author],
@@ -59,10 +56,9 @@ const copyrightString = c({
     });
   });
 
-  fs.mkdirSync('./public/feed', { recursive: true });
-  fs.writeFileSync('./public/feed/feed.xml', feed.rss2());
-  fs.writeFileSync('./public/feed/atom.xml', feed.atom1());
-  fs.writeFileSync('./public/feed/feed.json', feed.json1());
+  fs.mkdirSync('./public/rss', { recursive: true });
+  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
+  fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
 })();
 
 export {};
