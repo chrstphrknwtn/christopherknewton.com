@@ -117,12 +117,12 @@ const photographs: Array<Photograph> = [
     slug: '2019-viewing-area',
     title: 'Viewing Area'
   },
+  /*
   {
     year: 2019,
     slug: '2019-solheimajokull',
     title: 'Solheimajokull'
   },
-  /*
   {
     year: 2018,
     slug: '2018-graduation-1',

@@ -2,7 +2,7 @@ import axios from 'axios';
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
 
-import Container from '../components/container';
+import Layout from '../components/layout';
 import TumblrsGallery from '../components/tumblrs-gallery';
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 }
 
 const TumblrsPage = ({ tumblrs, error }: Props) => (
-  <Container isWide>
+  <Layout isWide>
     <Head>
       <title>Visual reference · Christopher Newton</title>
     </Head>
@@ -22,7 +22,7 @@ const TumblrsPage = ({ tumblrs, error }: Props) => (
         <TumblrsGallery tumblrs={tumblrs} />
       </>
     )}
-  </Container>
+  </Layout>
 );
 
 export const getServerSideProps: GetServerSideProps = async () => {

@@ -12,7 +12,7 @@ const PhotographFigure = ({ photograph }: Props) => (
       <img src={`/images/${photograph.slug}.jpg`} alt={photograph.title} />
     </figure>
 
-    <figcaption>
+    <figcaption className={styles.photographCaption}>
       {photograph.title}, {photograph.year}.
     </figcaption>
   </>

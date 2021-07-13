@@ -1,7 +1,6 @@
 import { GetStaticProps, GetStaticPaths } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
-import Container from '../../components/container';
+import Layout from '../../components/layout';
 import PhotographFigure from '../../components/photograph-figure';
 
 import photographs, { Photograph } from '../../data/photographs';
@@ -11,7 +10,7 @@ type Props = {
 };
 
 const PhotographsPage = ({ photograph }: Props) => (
-  <Container isWide>
+  <Layout>
     <Head>
       <title>
         {photograph.title}, {photograph.year} · Christopher Newton
@@ -23,14 +22,9 @@ const PhotographsPage = ({ photograph }: Props) => (
       <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
-    <span className="subhead">
-      <Link href="/photographs">
-        <a>Photographs</a>
-      </Link>
-    </span>
 
     <PhotographFigure photograph={photograph} />
-  </Container>
+  </Layout>
 );
 
 export const getStaticPaths: GetStaticPaths = async () => {

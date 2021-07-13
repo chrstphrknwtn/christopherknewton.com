@@ -1,11 +1,18 @@
 .photographFigure {
-  margin: 0 0 1rem 0;
+  margin: 0 2rem;
+  text-align: center;
 }
 
 .photographFigure img {
+  display: block;
   width: 100%;
-  max-width: 1024px;
-  max-height: 90vh;
+  max-height: calc(100vh - 14rem);
+  min-height: 20rem;
+  max-width: 2048;
   object-fit: contain;
-  object-position: 0 0;
+}
+
+.photographCaption {
+  padding: 1rem 0;
+  text-align: center;
 }

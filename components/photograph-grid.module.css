@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  justify-content: center;
   width: 100%;
 }
 
@@ -26,7 +26,7 @@
   object-fit: contain;
 }
 
-@media (min-width: 646px) {
+@media (min-width: 768px) {
   .item {
     width: 20rem;
     height: 20rem;

@@ -69,10 +69,10 @@ dl {
   font-size: 1rem;
 }
 
-h1,
+/* h1,
 h2 {
   font-weight: var(--font-weight-bold);
-}
+} */
 
 .subhead {
   display: block;
