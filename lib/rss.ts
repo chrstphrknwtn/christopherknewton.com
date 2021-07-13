@@ -45,8 +45,8 @@ const copyrightString = c({
       title: `${photograph.title}, ${photograph.year}`,
       description: `<figure>
         <img src="${baseUrl}/images/${photograph.slug}.jpg" alt="${photograph.title}" />
-      </figure>
-      <figcaption>${photograph.title}, ${photograph.year}.</figcaption>`,
+        <figcaption>${photograph.title}, ${photograph.year}.</figcaption>
+      </figure>`,
       id: url,
       link: url,
       author: [author],
