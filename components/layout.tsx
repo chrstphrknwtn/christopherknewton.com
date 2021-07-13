@@ -47,6 +47,24 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
           type="application/rss+xml"
           href="https://christopherknewton.com/rss/feed.xml"
         />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-16.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-96.png"
+        />
       </Head>
       <header className={styles.header}>
         {isIndex ? (
