@@ -55,6 +55,12 @@ const photographs: Array<Photograph> = [
     title: 'Ferry Sunset 1'
   },
   {
+    publishDate: '2021-07-13',
+    year: 2021,
+    slug: '2021-northern-hemisphere-scene-2',
+    title: 'Northern Hemisphere Scene 2'
+  },
+  {
     publishDate: '2021-06-25',
     year: 2021,
     slug: '2021-northern-hemisphere-scene-1',
