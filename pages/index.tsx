@@ -11,7 +11,7 @@ const AboutPage = ({
 }) => (
   <Layout isIndex>
     <Head>
-      <title>Christopher Newton</title>
+      <title>Photographs · Christopher Newton</title>
       <meta name="description" content="Photographs" />
       <meta name="og:title" content={`Christopher Newton`} />
       <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
