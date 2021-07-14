@@ -15,7 +15,7 @@ const PhotographGrid = ({ photographs }: Props) => (
           <a>
             <img
               src={`/images/${photograph.slug}-thumb.jpg`}
-              alt={photograph.title}
+              alt={`${photograph.title}, ${photograph.year}`}
             />
           </a>
         </Link>

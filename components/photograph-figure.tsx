@@ -9,7 +9,10 @@ type Props = {
 const PhotographFigure = ({ photograph }: Props) => (
   <>
     <figure className={styles.photographFigure}>
-      <img src={`/images/${photograph.slug}.jpg`} alt={photograph.title} />
+      <img
+        src={`/images/${photograph.slug}.jpg`}
+        alt={`${photograph.title}, ${photograph.year}`}
+      />
     </figure>
 
     <figcaption className={styles.photographCaption}>
