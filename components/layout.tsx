@@ -51,13 +51,13 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-16.png"
+          href="/favicon-32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32.png"
+          href="/favicon-16.png"
         />
         <link
           rel="icon"
