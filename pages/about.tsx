@@ -13,7 +13,7 @@ const AboutPage = ({
       <Head>
         <title>About · Christopher Newton</title>
         <meta name="description" content="Photographs" />
-        <meta name="og:title" content={`Christopher Newton`} />
+        <meta name="og:title" content={`About · Christopher Newton`} />
         <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
