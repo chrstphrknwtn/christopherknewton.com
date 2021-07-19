@@ -172,16 +172,6 @@ ul > li::before {
   margin-bottom: 0;
 }
 
-.flexListItem {
-  display: flex;
-  margin-bottom: 0.75rem;
-}
-
-.flexListItem > div:first-child {
-  margin-right: 0.5rem;
-}
-
-
 /* Page Section */
 
 .section {

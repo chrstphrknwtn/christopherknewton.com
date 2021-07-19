@@ -21,28 +21,7 @@ const AboutPage = ({
       <p>
         This website is a place to assemble photographs as I produce them in a
         stream of consciousness-like manner, actively and retroactively.
-        Eventually coherent projects may materialise.
       </p>
-
-      <h2 className="subhead">Education</h2>
-      <ul className="linklist">
-        <li className="flexListItem">
-          <div className="tnum">2012 - 2013</div>
-          <div>
-            Master of Design (Graphic Communication)
-            <br />
-            <em>Royal Melbourne Institute of Technology</em>
-          </div>
-        </li>
-        <li className="flexListItem">
-          <div className="tnum">2004 - 2005</div>
-          <div>
-            Dip Arts (Graphic Art),
-            <br />
-            <em>Royal Melbourne Institute of Technology</em>
-          </div>
-        </li>
-      </ul>
 
       <h2 className="subhead">Contact</h2>
       <ul className="linklist">
