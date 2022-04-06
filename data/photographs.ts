@@ -31,6 +31,12 @@ const photographs: Array<Photograph> = [
     title: 'MoPOP Museum 1'
   },
   {
+    publishDate: '2021-07-05',
+    year: 2021,
+    slug: '2021-filmore-ca',
+    title: 'Filmore California'
+  },
+  {
     publishDate: '2021-07-06',
     year: 2021,
     slug: '2021-ventura-ca-2',
