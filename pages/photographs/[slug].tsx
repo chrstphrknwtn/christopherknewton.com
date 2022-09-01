@@ -19,7 +19,10 @@ const PhotographsPage = ({ photograph }: Props) => (
         name="og:title"
         content={`${photograph.title}, ${photograph.year} · Christopher Newton`}
       />
-      <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
+      <meta
+        name="og:image"
+        content={`/images/thumbnails/${photograph.slug}.jpg`}
+      />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
 
