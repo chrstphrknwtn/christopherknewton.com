@@ -106,7 +106,7 @@ const photographs: Array<Photograph> = [
     publishDate: '2021-02-10',
     year: 2020,
     slug: '2020-main-street-usa-1',
-    title: 'Forth Ave, Seattle'
+    title: 'Fourth Ave, Seattle'
   },
   {
     publishDate: '2021-06-26',
