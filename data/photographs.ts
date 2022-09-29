@@ -13,6 +13,12 @@ const photographs: Array<Photograph> = [
     title: 'Sport Fence'
   },
   {
+    publishDate: '2022-09-29',
+    year: 2022,
+    slug: '2022-flood-light',
+    title: 'Flood Light'
+  },
+  {
     publishDate: '2022-08-31',
     year: 2021,
     slug: '2021-yellow-cabs',
