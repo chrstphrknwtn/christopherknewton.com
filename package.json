@@ -10,7 +10,7 @@
     "rss": "ts-node lib/rss.ts"
   },
   "engines": {
-    "node": ">=14"
+    "node": "14"
   },
   "dependencies": {
     "@types/nprogress": "^0.2.0",
