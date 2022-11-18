@@ -127,6 +127,12 @@ const photographs: Array<Photograph> = [
     title: 'Eastern Washington 1'
   },
   {
+    publishDate: '2020-11-01',
+    year: 2020,
+    slug: '2020-ferry-windows',
+    title: 'Ferry Windows'
+  },
+  {
     publishDate: '2020-12-01',
     year: 2020,
     slug: '2020-fruit',
