@@ -71,18 +71,16 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
           <h1>Christopher Newton</h1>
         ) : (
           <h1>
-            <Link href="/">
-              <a>Christopher Newton</a>
-            </Link>
+            <Link href="/">Christopher Newton</Link>
           </h1>
         )}
         <ul>
           {navigationLinks.map(link => (
             <li key={link.route}>
-              <Link href={link.route}>
-                <a className={link.route === router.route ? styles.active : ''}>
-                  {link.label}
-                </a>
+              <Link
+                href={link.route}
+                className={link.route === router.route ? styles.active : ''}>
+                {link.label}
               </Link>
             </li>
           ))}

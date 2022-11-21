@@ -12,12 +12,10 @@ const PhotographGrid = ({ photographs }: Props) => (
     {photographs.map(photograph => (
       <div className={styles.item} key={photograph.slug}>
         <Link href={`/photographs/${photograph.slug}`}>
-          <a>
-            <img
-              src={`/images/thumbnails/${photograph.slug}.jpg`}
-              alt={`${photograph.title}, ${photograph.year}`}
-            />
-          </a>
+          <img
+            src={`/images/thumbnails/${photograph.slug}.jpg`}
+            alt={`${photograph.title}, ${photograph.year}`}
+          />
         </Link>
       </div>
     ))}

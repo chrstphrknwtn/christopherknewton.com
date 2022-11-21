@@ -9,26 +9,28 @@ type Props = {
   photograph: Photograph;
 };
 
-const PhotographsPage = ({ photograph }: Props) => (
-  <Layout>
-    <Head>
-      <title>
-        {photograph.title}, {photograph.year} · Christopher Newton
-      </title>
-      <meta
-        name="og:title"
-        content={`${photograph.title}, ${photograph.year} · Christopher Newton`}
-      />
-      <meta
-        name="og:image"
-        content={`/images/thumbnails/${photograph.slug}.jpg`}
-      />
-      <meta name="twitter:card" content="summary_large_image" />
-    </Head>
+const PhotographsPage = ({ photograph }: Props) => {
+  const title = `${photograph.title}, ${photograph.year} · Christopher Newton`;
 
-    <PhotographFigure photograph={photograph} />
-  </Layout>
-);
+  return (
+    <Layout>
+      <Head>
+        <title>{title}</title>
+        <meta
+          name="og:title"
+          content={`${photograph.title}, ${photograph.year} · Christopher Newton`}
+        />
+        <meta
+          name="og:image"
+          content={`/images/thumbnails/${photograph.slug}.jpg`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+
+      <PhotographFigure photograph={photograph} />
+    </Layout>
+  );
+};
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const paths = photographs.map(p => {

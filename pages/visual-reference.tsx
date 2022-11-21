@@ -37,7 +37,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     const tumblrs = responses.map(response => response.data.response);
 
     return { props: { tumblrs } };
-  } catch (error) {
+  } catch (error: any) {
     console.error('Fetching tumblrs failed:', error.message);
     return { props: { error: error.message } };
   }
