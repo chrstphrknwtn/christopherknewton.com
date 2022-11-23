@@ -17,7 +17,7 @@ const AboutPage = ({
       <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
-    <PhotographGrid photographs={photographs} />
+    <PhotographGrid photographs={photographs.filter(p => p.publish)} />
   </Layout>
 );
 
