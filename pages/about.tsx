@@ -18,10 +18,7 @@ const AboutPage = ({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <p>
-        This website is a place to assemble photographs as I produce them in a
-        stream of consciousness-like manner, actively and retroactively.
-      </p>
+      <p>This website is a place a place for me to think about photographs.</p>
     </Layout>
   );
 };
