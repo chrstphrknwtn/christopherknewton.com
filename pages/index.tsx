@@ -5,16 +5,18 @@ import photographs, { Photograph } from '../data/photographs';
 
 const AboutPage = ({
   /* Use the latest photograph as the social image */
-  photograph = photographs[0]
+  photograph = photographs.find(p => p.slug === '2021-yellow-cabs')
 }: {
-  photograph: Photograph;
+  photograph?: Photograph;
 }) => (
   <Layout isIndex>
     <Head>
       <title>Photographs · Christopher Newton</title>
       <meta name="description" content="Photographs" />
       <meta name="og:title" content={`Photographs · Christopher Newton`} />
-      <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
+      {photograph && (
+        <meta name="og:image" content={`/images/${photograph.slug}.jpg`} />
+      )}
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
     <PhotographGrid photographs={photographs.filter(p => p.publish)} />
