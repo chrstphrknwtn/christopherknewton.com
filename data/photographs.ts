@@ -8,6 +8,13 @@ export type Photograph = {
 
 const photographs: Array<Photograph> = [
   {
+    publish: true,
+    publishDate: '2022-12-19',
+    year: 2022,
+    slug: '2022-white-house',
+    title: 'White House'
+  },
+  {
     publish: false,
     publishDate: '2022-08-31',
     year: 2022,
