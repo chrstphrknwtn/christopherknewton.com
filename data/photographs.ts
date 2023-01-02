@@ -176,7 +176,7 @@ const photographs: Array<Photograph> = [
     title: 'Fruit'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2020-12-01',
     year: 2020,
     slug: '2020-snoqualmie-pass-by-car',
