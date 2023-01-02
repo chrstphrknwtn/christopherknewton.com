@@ -169,7 +169,7 @@ const photographs: Array<Photograph> = [
     title: 'Ferry Windows'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2020-12-01',
     year: 2020,
     slug: '2020-fruit',
