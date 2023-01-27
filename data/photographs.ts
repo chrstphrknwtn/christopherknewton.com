@@ -15,7 +15,7 @@ const photographs: Array<Photograph> = [
     title: 'White House'
   },
   {
-    publish: false,
+    publish: true,
     publishDate: '2022-08-31',
     year: 2022,
     slug: '2022-sport-fence',
