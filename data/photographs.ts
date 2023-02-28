@@ -57,7 +57,7 @@ const photographs: Array<Photograph> = [
     title: 'MoPOP Museum 2'
   },
   {
-    publish: false,
+    publish: true,
     publishDate: '2021-06-25',
     year: 2021,
     slug: '2021-mopop-1',
@@ -71,7 +71,7 @@ const photographs: Array<Photograph> = [
     title: 'Filmore California'
   },
   {
-    publish: false,
+    publish: true,
     publishDate: '2021-07-06',
     year: 2021,
     slug: '2021-ventura-ca-2',
