@@ -9,6 +9,13 @@ export type Photograph = {
 const photographs: Array<Photograph> = [
   {
     publish: true,
+    publishDate: '2023-04-21',
+    year: 2023,
+    slug: '2023-desire-path',
+    title: 'Desire Path'
+  },
+  {
+    publish: true,
     publishDate: '2022-12-19',
     year: 2022,
     slug: '2022-white-house',
