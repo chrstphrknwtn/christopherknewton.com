@@ -8,14 +8,14 @@ export type Photograph = {
 
 const photographs: Array<Photograph> = [
   {
-    publish: true,
+    publish: false,
     publishDate: '2023-04-21',
     year: 2023,
     slug: '2023-desire-path',
     title: 'Desire Path'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2022-12-19',
     year: 2022,
     slug: '2022-white-house',
@@ -216,6 +216,13 @@ const photographs: Array<Photograph> = [
     year: 2019,
     slug: '2019-viewing-area',
     title: 'Viewing Area'
+  },
+  {
+    publish: true,
+    publishDate: '2023-04-27',
+    year: 2020,
+    slug: '2020-bedroom',
+    title: 'Bedroom'
   },
   {
     publish: true,
