@@ -1,18 +1,25 @@
 export type Photograph = {
-  publish: boolean;
-  publishDate: string;
-  year: number;
-  slug: string;
-  title: string;
-};
+  publish: boolean
+  publishDate: string
+  year: number
+  slug: string
+  title: string
+}
 
 const photographs: Array<Photograph> = [
   {
-    publish: false,
-    publishDate: '2023-04-21',
+    publish: true,
+    publishDate: '2023-10-31',
     year: 2023,
-    slug: '2023-desire-path',
-    title: 'Desire Path'
+    slug: '2023-gdansk-wraps',
+    title: 'Gdansk'
+  },
+  {
+    publish: true,
+    publishDate: '2023-10-31',
+    year: 2023,
+    slug: '2023-house-fire',
+    title: 'House Fire'
   },
   {
     publish: false,
@@ -22,7 +29,7 @@ const photographs: Array<Photograph> = [
     title: 'White House'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2022-08-31',
     year: 2022,
     slug: '2022-sport-fence',
@@ -231,6 +238,6 @@ const photographs: Array<Photograph> = [
     slug: '2010-9600-meilleur',
     title: '9600 Meilleur'
   }
-];
+]
 
-export default photographs;
+export default photographs
