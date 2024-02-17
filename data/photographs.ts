@@ -22,7 +22,7 @@ const photographs: Array<Photograph> = [
     title: 'House Fire'
   },
   {
-    publish: false,
+    publish: true,
     publishDate: '2022-12-19',
     year: 2022,
     slug: '2022-white-house',
