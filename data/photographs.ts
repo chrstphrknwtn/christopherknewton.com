@@ -12,7 +12,7 @@ const photographs: Array<Photograph> = [
     publishDate: '2023-10-31',
     year: 2023,
     slug: '2023-gdansk-wraps',
-    title: 'Gdansk'
+    title: 'Gdańsk'
   },
   {
     publish: true,
