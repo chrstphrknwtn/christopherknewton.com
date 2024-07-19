@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "yarn rss && next build",
+    "build": "next build",
     "rss": "ts-node lib/rss.ts"
   },
   "engines": {
