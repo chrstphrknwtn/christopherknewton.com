@@ -1,6 +1,6 @@
 import data, { Photograph } from '../data/photographs';
 
-export default async function getPhotographData(slug?: string) {
+export default async function getPhotographMeta(slug?: string) {
   let photograph: Photograph | undefined;
 
   if (!slug) {
