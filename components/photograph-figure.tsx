@@ -1,4 +1,3 @@
-import React from 'react';
 import { Photograph } from '../data/photographs';
 import styles from './photograph-figure.module.css';
 

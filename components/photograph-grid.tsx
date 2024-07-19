@@ -1,24 +1,21 @@
-import React from 'react';
 import Link from 'next/link';
-import { Photograph } from '../data/photographs';
+import photographs from '../data/photographs';
 import styles from './photograph-grid.module.css';
 
-type Props = {
-  photographs: Array<Photograph>;
-};
-
-const PhotographGrid = ({ photographs }: Props) => (
+const PhotographGrid = () => (
   <div className={styles.container}>
-    {photographs.map(photograph => (
-      <div className={styles.item} key={photograph.slug}>
-        <Link href={`/pictures/${photograph.slug}`}>
-          <img
-            src={`/images/thumbnails/${photograph.slug}.jpg`}
-            alt={`${photograph.title}, ${photograph.year}`}
-          />
-        </Link>
-      </div>
-    ))}
+    {photographs
+      .filter(p => p.publish)
+      .map(photograph => (
+        <div className={styles.item} key={photograph.slug}>
+          <Link href={`/pictures/${photograph.slug}`}>
+            <img
+              src={`/images/thumbnails/${photograph.slug}.jpg`}
+              alt={`${photograph.title}, ${photograph.year}`}
+            />
+          </Link>
+        </div>
+      ))}
   </div>
 );
 
