@@ -16,6 +16,13 @@ const photographs: Array<Photograph> = [
   },
   {
     publish: true,
+    publishDate: '2024-07-18',
+    year: 2024,
+    slug: '2024-aperture-grille-1',
+    title: 'Aperture Grille 1'
+  },
+  {
+    publish: true,
     publishDate: '2023-10-31',
     year: 2023,
     slug: '2023-gdansk-wraps',
