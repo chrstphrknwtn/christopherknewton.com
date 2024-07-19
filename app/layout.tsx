@@ -1,8 +1,9 @@
+import '../styles/global.css';
+
 import Link from 'next/link';
 import copyright from 'copyright';
 import getPhotographMeta from '../lib/getPhotographMeta';
 
-import '../styles/global.css';
 import styles from './layout.module.css';
 
 export async function generateMetadata() {
