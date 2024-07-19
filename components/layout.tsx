@@ -22,8 +22,8 @@ interface Props {
 
 const navigationLinks = [
   {
-    route: '/photographs',
-    label: 'photographs'
+    route: '/pictures',
+    label: 'pictures'
   },
   {
     route: '/about',

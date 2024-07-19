@@ -35,6 +35,7 @@
     "arrowParens": "avoid",
     "singleQuote": true,
     "trailingComma": "none",
-    "jsxBracketSameLine": true
+    "jsxBracketSameLine": true,
+    "semi": true
   }
 }

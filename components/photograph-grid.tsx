@@ -11,7 +11,7 @@ const PhotographGrid = ({ photographs }: Props) => (
   <div className={styles.container}>
     {photographs.map(photograph => (
       <div className={styles.item} key={photograph.slug}>
-        <Link href={`/photographs/${photograph.slug}`}>
+        <Link href={`/pictures/${photograph.slug}`}>
           <img
             src={`/images/thumbnails/${photograph.slug}.jpg`}
             alt={`${photograph.title}, ${photograph.year}`}

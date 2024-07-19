@@ -20,7 +20,7 @@ const AboutPage = ({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
 
-      <p>This website is a place for me to think about photographs.</p>
+      <p>This website is a place for me to think about pictures.</p>
     </Layout>
   );
 };

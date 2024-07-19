@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/photographs/:path*",
+      "destination": "/pictures/:path*"
+    }
+  ]
+}

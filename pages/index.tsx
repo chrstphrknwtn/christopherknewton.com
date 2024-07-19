@@ -1,3 +1,3 @@
-import Index from './photographs/index';
+import Index from './pictures/index';
 
 export default Index;
