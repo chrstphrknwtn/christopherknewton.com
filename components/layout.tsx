@@ -4,7 +4,6 @@ import Link from 'next/link';
 import cx from 'classnames';
 import c from 'copyright';
 
-import ExternalLink from './external-link';
 import styles from './layout.module.css';
 
 const copyrightString = c({
@@ -88,12 +87,7 @@ const Layout = ({ children, isIndex, isSlim, isWide }: Props) => {
       </header>
       <section className={styles.content}>{children}</section>
       <footer className={styles.footer}>
-        <p>
-          {copyrightString} ·{' '}
-          <ExternalLink href="https://github.com/chrstphrknwtn/christopherknewton.com">
-            Source
-          </ExternalLink>
-        </p>
+        <p>{copyrightString}</p>
       </footer>
     </main>
   );
