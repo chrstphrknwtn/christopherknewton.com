@@ -1,12 +1,19 @@
 export type Photograph = {
-  publish: boolean
-  publishDate: string
-  year: number
-  slug: string
-  title: string
-}
+  publish: boolean;
+  publishDate: string;
+  year: number;
+  slug: string;
+  title: string;
+};
 
 const photographs: Array<Photograph> = [
+  {
+    publish: true,
+    publishDate: '2024-07-23',
+    year: 2024,
+    slug: '2024-aperture-grille-0',
+    title: 'Aperture Grille 0'
+  },
   {
     publish: true,
     publishDate: '2024-06-26',
@@ -252,6 +259,6 @@ const photographs: Array<Photograph> = [
     slug: '2010-9600-meilleur',
     title: '9600 Meilleur'
   }
-]
+];
 
-export default photographs
+export default photographs;
