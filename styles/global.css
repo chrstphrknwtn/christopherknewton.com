@@ -7,6 +7,7 @@
   --font-weight-regular: 400;
   --font-weight-bold: 500;
   --foreground-color: black;
+  --foreground-color-muted: rgb(128, 128, 128);
   --background-color: white;
   --link-background-color: rgba(0, 0, 0, 0.05);
   --mark-background-color: hsl(64, 100%, 93%);

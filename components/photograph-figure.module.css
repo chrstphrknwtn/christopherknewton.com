@@ -11,7 +11,7 @@
 @media (min-width: 768px) {
   .photographFigure img {
     min-height: 20rem;
-    max-height: calc(100vh - 14rem);  
+    max-height: calc(100vh - 14rem);
     max-width: 2048;
   }
 }
@@ -21,3 +21,16 @@
   text-align: center;
 }
 
+.detailSwitcher {
+  font-style: italic;
+  color: var(--foreground-color-muted);
+}
+
+.detailSwitcher span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.detailSwitcher .active {
+  color: var(--foreground-color);
+}

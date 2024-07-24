@@ -4,6 +4,7 @@ export type Photograph = {
   year: number;
   slug: string;
   title: string;
+  hasDetail?: boolean;
 };
 
 const photographs: Array<Photograph> = [
@@ -12,7 +13,8 @@ const photographs: Array<Photograph> = [
     publishDate: '2024-07-23',
     year: 2024,
     slug: '2024-aperture-grille-0',
-    title: 'Aperture Grille 0'
+    title: 'Aperture Grille 0',
+    hasDetail: true
   },
   {
     publish: true,
