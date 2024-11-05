@@ -10,6 +10,13 @@ export type Photograph = {
 const photographs: Array<Photograph> = [
   {
     publish: true,
+    publishDate: '2024-11-05',
+    year: 2024,
+    slug: '2024-paradise-glacier-trail-2',
+    title: 'Paradise Glacier Trail 2'
+  },
+  {
+    publish: true,
     publishDate: '2024-07-23',
     year: 2024,
     slug: '2024-aperture-grille-0',
