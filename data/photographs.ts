@@ -32,17 +32,17 @@ const photographs: Array<Photograph> = [
   },
   {
     publish: true,
-    publishDate: '2024-06-26',
-    year: 2024,
-    slug: '2024-green-wall',
-    title: 'Green Wall'
-  },
-  {
-    publish: true,
     publishDate: '2024-07-18',
     year: 2024,
     slug: '2024-aperture-grille-1',
     title: 'Aperture Grille 1'
+  },
+  {
+    publish: true,
+    publishDate: '2024-06-26',
+    year: 2024,
+    slug: '2024-green-wall',
+    title: 'Green Wall'
   },
   {
     publish: true,
