@@ -16,7 +16,7 @@ const photographs: Array<Photograph> = [
     title: 'Paradise Glacier Trail 2'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2024-11-05',
     year: 2024,
     slug: '2024-paradise-glacier-trail-1',
