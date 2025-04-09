@@ -1,8 +1,13 @@
-import type { Metadata } from 'next'
+import Header from '@/components/header'
+import Footer from '@/components/footer'
 import PhotographGrid from '@/components/photograph-grid'
 
-export const metadata: Metadata = {
-  title: 'Pictures'
-}
+const Pictures = () => (
+  <>
+    <Header />
+    <PhotographGrid />
+    <Footer />
+  </>
+)
 
-export default PhotographGrid
+export default Pictures

@@ -1,0 +1,52 @@
+.header {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.header h1,
+.header h2 {
+  margin-bottom: 0;
+}
+
+.header a {
+  color: inherit;
+  text-decoration: none;
+  background: unset;
+}
+
+.active {
+  text-decoration: underline !important;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.header ul > li {
+  padding: 0 0.125rem;
+  font-style: italic;
+}
+
+.header ul > li::before {
+  content: unset;
+}
+
+.header ul > li::after {
+  content: '·';
+  padding-left: 0.25rem;
+}
+
+.header ul > li:last-child::after {
+  content: unset;
+}

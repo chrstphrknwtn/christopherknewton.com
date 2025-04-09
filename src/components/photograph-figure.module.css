@@ -1,5 +1,11 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .photographFigure {
-  margin: 0 1rem;
+  padding: 1rem;
+  margin: 0;
 }
 
 .photographFigure img {
@@ -8,17 +14,17 @@
   object-fit: contain;
 }
 
-@media (min-width: 768px) {
-  .photographFigure img {
-    min-height: 20rem;
-    max-height: calc(100vh - 14rem);
-    max-width: 2048;
-  }
+.photographCaption {
+  padding: 1.5rem;
+  text-align: center;
 }
 
-.photographCaption {
-  padding: 1rem 0;
-  text-align: center;
+.name {
+  color: var(--foreground-color-muted);
+}
+
+.name a {
+  color: inherit;
 }
 
 .detailSwitcher {
@@ -33,4 +39,40 @@
 
 .detailSwitcher .active {
   color: var(--foreground-color);
+}
+
+.link {
+  padding-top: 1.5rem;
+  color: var(--foreground-color-muted);
+}
+
+.link a {
+  color: inherit;
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+  .pageContainer {
+    flex-direction: row-reverse;
+  }
+
+  .photographFigure {
+    flex-grow: 1;
+    padding: 1.5rem;
+  }
+
+  .photographFigure img {
+    min-height: 20rem;
+    max-height: calc(100vh - 3rem);
+    max-width: 2048;
+  }
+
+  .photographCaption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 3rem 1rem 3rem 3rem;
+    text-align: left;
+    text-wrap: nowrap;
+  }
 }

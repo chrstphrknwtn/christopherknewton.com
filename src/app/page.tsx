@@ -1,3 +1,3 @@
-import PhotographGrid from '../components/photograph-grid'
+import PicturesPage from '@/app/pictures/page'
 
-export default PhotographGrid
+export default PicturesPage
