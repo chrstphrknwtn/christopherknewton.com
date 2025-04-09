@@ -1,4 +1,4 @@
-import data, { Photograph } from '../data/photographs';
+import data, { Photograph } from '@/data/photographs';
 
 export default async function getPhotographMeta(slug?: string) {
   let photograph: Photograph | undefined;
@@ -12,7 +12,7 @@ export default async function getPhotographMeta(slug?: string) {
   if (!photograph) return null;
 
   const relativePath = `images/thumbnails/${photograph.slug}.jpg`;
-  const image = await import(`../public/${relativePath}`);
+  const image = await import(`../../public/${relativePath}`);
 
   return {
     title: `${photograph.title}, ${photograph.year}`,

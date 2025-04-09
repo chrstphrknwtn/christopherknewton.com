@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import PhotographFigure from '../../../components/photograph-figure';
-import photographs, { Photograph } from '../../../data/photographs';
-import getPhotographMeta from '../../../lib/getPhotographMeta';
+import PhotographFigure from '@/components/photograph-figure';
+import photographs, { Photograph } from '@/data/photographs';
+import getPhotographMeta from '@/lib/getPhotographMeta';
 
 type Props = {
   params: Promise<{ slug: string }>;

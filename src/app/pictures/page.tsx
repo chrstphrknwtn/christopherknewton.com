@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import PhotographGrid from '../../components/photograph-grid';
+import PhotographGrid from '@/components/photograph-grid';
 
 export const metadata: Metadata = {
   title: 'Pictures'

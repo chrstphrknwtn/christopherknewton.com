@@ -1,8 +1,8 @@
-import '../styles/global.css';
+import '@/styles/global.css';
 
 import Link from 'next/link';
 import copyright from 'copyright';
-import getPhotographMeta from '../lib/getPhotographMeta';
+import getPhotographMeta from '@/lib/getPhotographMeta';
 
 import styles from './layout.module.css';
 
@@ -18,7 +18,7 @@ export async function generateMetadata() {
     openGraph: {
       images: [
         {
-          url: photographMeta?.image.url,
+          url: photographMeta?.image.url || '',
           width: photographMeta?.image.height,
           height: photographMeta?.image.width
         }
