@@ -1,15 +1,15 @@
+import type { Metadata } from 'next';
 import PhotographFigure from '../../../components/photograph-figure';
 import photographs, { Photograph } from '../../../data/photographs';
 import getPhotographMeta from '../../../lib/getPhotographMeta';
 
-type MetaProps = {
-  params: { slug: string };
+type Props = {
+  params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata({ params }: MetaProps) {
-  const photograph = photographs.find(
-    (p: Photograph) => p.slug === params.slug
-  );
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const photograph = photographs.find((p: Photograph) => p.slug === slug);
 
   const photographMeta = await getPhotographMeta(photograph?.slug);
 
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: MetaProps) {
     openGraph: {
       images: [
         {
-          url: photographMeta?.image.url,
+          url: photographMeta?.image.url || '',
           width: photographMeta?.image.height,
           height: photographMeta?.image.width
         }
@@ -34,14 +34,9 @@ export async function generateStaticParams() {
   }));
 }
 
-interface Props {
-  params: { slug: string };
-}
-
-const PhotographsPage = ({ params }: Props) => {
-  const photograph = photographs.find(
-    (p: Photograph) => p.slug === params.slug
-  );
+const PhotographsPage = async ({ params }: Props) => {
+  const { slug } = await params;
+  const photograph = photographs.find((p: Photograph) => p.slug === slug);
   return photograph ? <PhotographFigure photograph={photograph} /> : null;
 };
 
