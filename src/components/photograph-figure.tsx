@@ -1,18 +1,18 @@
-'use client';
+'use client'
 
-import { useState } from 'react';
-import { Photograph } from '../data/photographs';
-import styles from './photograph-figure.module.css';
+import { useState } from 'react'
+import { Photograph } from '../data/photographs'
+import styles from './photograph-figure.module.css'
 
 type Props = {
-  photograph: Photograph;
-};
+  photograph: Photograph
+}
 
 const PhotographFigure = ({ photograph }: Props) => {
-  const [showDetail, setShowDetail] = useState(false);
+  const [showDetail, setShowDetail] = useState(false)
   const imageUrl = showDetail
     ? `/images/${photograph.slug}-detail.jpg`
-    : `/images/${photograph.slug}.jpg`;
+    : `/images/${photograph.slug}.jpg`
 
   return (
     <>
@@ -28,19 +28,21 @@ const PhotographFigure = ({ photograph }: Props) => {
         <section className={styles.detailSwitcher}>
           <span
             className={showDetail ? '' : styles.active}
-            onClick={() => setShowDetail(false)}>
+            onClick={() => setShowDetail(false)}
+          >
             picture
           </span>
           {' · '}
           <span
             className={showDetail ? styles.active : ''}
-            onClick={() => setShowDetail(true)}>
+            onClick={() => setShowDetail(true)}
+          >
             detail
           </span>
         </section>
       )}
     </>
-  );
-};
+  )
+}
 
-export default PhotographFigure;
+export default PhotographFigure

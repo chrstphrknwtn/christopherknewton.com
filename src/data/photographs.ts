@@ -1,11 +1,11 @@
 export type Photograph = {
-  publish: boolean;
-  publishDate: string;
-  year: number;
-  slug: string;
-  title: string;
-  hasDetail?: boolean;
-};
+  publish: boolean
+  publishDate: string
+  year: number
+  slug: string
+  title: string
+  hasDetail?: boolean
+}
 
 const photographs: Array<Photograph> = [
   {
@@ -289,6 +289,6 @@ const photographs: Array<Photograph> = [
     slug: '2010-9600-meilleur',
     title: '9600 Meilleur'
   }
-];
+]
 
-export default photographs;
+export default photographs

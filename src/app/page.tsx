@@ -1,3 +1,3 @@
-import PhotographGrid from '../components/photograph-grid';
+import PhotographGrid from '../components/photograph-grid'
 
-export default PhotographGrid;
+export default PhotographGrid

@@ -1,18 +1,18 @@
-import data, { Photograph } from '@/data/photographs';
+import data, { Photograph } from '@/data/photographs'
 
 export default async function getPhotographMeta(slug?: string) {
-  let photograph: Photograph | undefined;
+  let photograph: Photograph | undefined
 
   if (!slug) {
-    photograph = data[0];
+    photograph = data[0]
   } else {
-    photograph = data.find((p: Photograph) => p.slug === slug);
+    photograph = data.find((p: Photograph) => p.slug === slug)
   }
 
-  if (!photograph) return null;
+  if (!photograph) return null
 
-  const relativePath = `images/thumbnails/${photograph.slug}.jpg`;
-  const image = await import(`../../public/${relativePath}`);
+  const relativePath = `images/thumbnails/${photograph.slug}.jpg`
+  const image = await import(`../../public/${relativePath}`)
 
   return {
     title: `${photograph.title}, ${photograph.year}`,
@@ -21,5 +21,5 @@ export default async function getPhotographMeta(slug?: string) {
       height: image.height,
       width: image.width
     }
-  };
+  }
 }

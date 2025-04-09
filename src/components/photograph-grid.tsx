@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import photographs from '../data/photographs';
-import styles from './photograph-grid.module.css';
+import Link from 'next/link'
+import photographs from '../data/photographs'
+import styles from './photograph-grid.module.css'
 
 const PhotographGrid = () => (
   <div className={styles.container}>
@@ -17,6 +17,6 @@ const PhotographGrid = () => (
         </div>
       ))}
   </div>
-);
+)
 
-export default PhotographGrid;
+export default PhotographGrid

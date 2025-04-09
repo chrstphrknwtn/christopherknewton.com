@@ -1,13 +1,13 @@
-import '@/styles/global.css';
+import '@/styles/global.css'
 
-import Link from 'next/link';
-import copyright from 'copyright';
-import getPhotographMeta from '@/lib/getPhotographMeta';
+import Link from 'next/link'
+import copyright from 'copyright'
+import getPhotographMeta from '@/lib/getPhotographMeta'
 
-import styles from './layout.module.css';
+import styles from './layout.module.css'
 
 export async function generateMetadata() {
-  const photographMeta = await getPhotographMeta();
+  const photographMeta = await getPhotographMeta()
 
   return {
     metadataBase: new URL('https://christopherknewton.com'),
@@ -24,7 +24,7 @@ export async function generateMetadata() {
         }
       ]
     }
-  };
+  }
 }
 
 const navigationLinks = [
@@ -36,18 +36,18 @@ const navigationLinks = [
     route: '/about',
     label: 'about'
   }
-];
+]
 
 const copyrightString = copyright({
   name: 'Christopher Newton',
   short: true,
   startYear: 1981
-});
+})
 
 export default function RootLayout({
   children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en">
@@ -70,5 +70,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  );
+  )
 }

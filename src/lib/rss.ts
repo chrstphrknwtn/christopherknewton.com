@@ -1,28 +1,28 @@
-import fs from 'fs';
-import { Feed } from 'feed';
-import c from 'copyright';
+import fs from 'fs'
+import { Feed } from 'feed'
+import c from 'copyright'
 
-import photographs, { Photograph } from '../data/photographs';
+import photographs, { Photograph } from '../data/photographs'
 
 const copyrightString = c({
   name: 'Christopher Newton',
   short: true,
   startYear: 1981
-});
+})
 
-(function () {
-  console.log('Building RSS feed');
+;(function () {
+  console.log('Building RSS feed')
 
   if (process.env.NODE_ENV === 'development') {
-    return;
+    return
   }
 
-  const baseUrl = 'https://christopherknewton.com';
-  const date = new Date();
+  const baseUrl = 'https://christopherknewton.com'
+  const date = new Date()
   const author = {
     name: 'Christopher Newton',
     link: baseUrl
-  };
+  }
 
   const feed = new Feed({
     title: 'Christopher Newton',
@@ -37,10 +37,10 @@ const copyrightString = c({
       atom: `${baseUrl}/rss/atom.xml`
     },
     author
-  });
+  })
 
   photographs.forEach((photograph: Photograph) => {
-    const url = `${baseUrl}/${photograph.slug}`;
+    const url = `${baseUrl}/${photograph.slug}`
     feed.addItem({
       title: `${photograph.title}, ${photograph.year}`,
       description: `<figure>
@@ -51,12 +51,12 @@ const copyrightString = c({
       link: url,
       author: [author],
       date: new Date(photograph.publishDate)
-    });
-  });
+    })
+  })
 
-  fs.mkdirSync('./public/rss', { recursive: true });
-  fs.writeFileSync('./public/rss/feed.xml', feed.rss2());
-  fs.writeFileSync('./public/rss/atom.xml', feed.atom1());
-})();
+  fs.mkdirSync('./public/rss', { recursive: true })
+  fs.writeFileSync('./public/rss/feed.xml', feed.rss2())
+  fs.writeFileSync('./public/rss/atom.xml', feed.atom1())
+})()
 
-export {};
+export {}

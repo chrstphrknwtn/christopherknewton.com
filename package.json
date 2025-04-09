@@ -29,7 +29,6 @@
     "arrowParens": "avoid",
     "singleQuote": true,
     "trailingComma": "none",
-    "jsxBracketSameLine": true,
-    "semi": true
+    "semi": false
   }
 }
