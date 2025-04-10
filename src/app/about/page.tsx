@@ -11,11 +11,9 @@ export const metadata: Metadata = {
 const AboutPage = () => (
   <>
     <Header />
-    <div className={styles.container}>
-      <section className={styles.pageContainer}>
-        <p>This website is a place for me to think about pictures.</p>
-      </section>
-    </div>
+    <section className={styles.container}>
+      <p>This website is a place for me to think about pictures.</p>
+    </section>
     <Footer />
   </>
 )

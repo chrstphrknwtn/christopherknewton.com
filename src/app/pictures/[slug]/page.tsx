@@ -1,25 +1,43 @@
 import type { Metadata } from 'next'
+import type { StaticImageData } from 'next/image'
 import PhotographFigure from '@/components/photograph-figure'
-import photographs, { Photograph } from '@/data/photographs'
-import getPhotographMeta from '@/lib/getPhotographMeta'
+import data, { Photograph } from '@/data/photographs'
 
 type Props = {
   params: Promise<{ slug: string }>
 }
 
+interface Picture {
+  photograph: Photograph
+  image: StaticImageData
+}
+
+async function importImage(slug: string): Promise<Picture> {
+  const photograph = data.find((p: Photograph) => p.slug === slug)
+  if (!photograph) {
+    throw Error(`Photograph for slug "${slug}" not found`)
+  }
+  const image = await import(`public/images/${slug}.jpg`)
+
+  return {
+    photograph,
+    image: image.default
+  }
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const photographMeta = await getPhotographMeta(slug)
+  const { photograph, image } = await importImage(slug)
 
   return {
     metadataBase: new URL('https://christopherknewton.com'),
-    title: photographMeta?.title,
+    title: photograph.title,
     openGraph: {
       images: [
         {
-          url: photographMeta.image.url,
-          width: photographMeta.image.height,
-          height: photographMeta.image.width
+          url: image.src,
+          width: image.height,
+          height: image.width
         }
       ]
     }
@@ -27,21 +45,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  return photographs.map((photograph: Photograph) => ({
+  return data.map((photograph: Photograph) => ({
     slug: photograph.slug
   }))
 }
 
 const PhotographsPage = async ({ params }: Props) => {
   const { slug } = await params
-  const photograph = photographs.find((p: Photograph) => p.slug === slug)
-  if (!photograph) {
-    throw Error(`Photograph for slug "${slug}" not found`)
-  }
+  const { photograph, image } = await importImage(slug)
 
-  const image = await import(`public/images/${slug}.jpg`)
-
-  return <PhotographFigure photograph={photograph} image={image.default} />
+  return <PhotographFigure photograph={photograph} image={image} />
 }
 
 export default PhotographsPage

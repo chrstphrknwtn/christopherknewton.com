@@ -6,15 +6,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "rss": "ts-node lib/rss.ts"
+    "build": "next build"
   },
   "engines": {
     "node": "^22"
   },
   "dependencies": {
     "copyright": "^0.0.5",
-    "feed": "^4.2.2",
     "next": "^15.2.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
@@ -22,7 +20,6 @@
   "devDependencies": {
     "@types/node": "^22.14.0",
     "@types/react": "^19.1.0",
-    "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
   "prettier": {
