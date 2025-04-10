@@ -276,7 +276,7 @@ const photographs: Array<Photograph> = [
     title: 'Viewing Area'
   },
   {
-    publish: true,
+    publish: false,
     publishDate: '2023-04-27',
     year: 2020,
     slug: '2020-bedroom',

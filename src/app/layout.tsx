@@ -15,9 +15,9 @@ export async function generateMetadata() {
     openGraph: {
       images: [
         {
-          url: photographMeta?.image.url || '',
-          width: photographMeta?.image.height,
-          height: photographMeta?.image.width
+          url: photographMeta.image.url,
+          width: photographMeta.image.height,
+          height: photographMeta.image.width
         }
       ]
     }

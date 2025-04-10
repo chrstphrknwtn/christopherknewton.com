@@ -1,23 +1,27 @@
 import data, { Photograph } from '@/data/photographs'
 
-export default async function getPhotographMeta(slug?: string) {
-  let photograph: Photograph | undefined
-
-  if (!slug) {
-    photograph = data[0]
-  } else {
-    photograph = data.find((p: Photograph) => p.slug === slug)
+interface PhotographMeta {
+  title: string
+  image: {
+    url: string
+    height: string
+    width: string
   }
+}
 
-  if (!photograph) return null
+export default async function getPhotographMeta(
+  slug?: string
+): Promise<PhotographMeta> {
+  const candidate = data.find((p: Photograph) => p.slug === slug)
+  const photograph: Photograph = candidate ? candidate : data[0]
 
-  const relativePath = `images/thumbnails/${photograph.slug}.jpg`
-  const image = await import(`../../public/${relativePath}`)
+  const imageModule = await import(`/public/images/${photograph.slug}.jpg`)
+  const image = imageModule.default
 
   return {
     title: `${photograph.title}, ${photograph.year}`,
     image: {
-      url: `https://christopherknewton.com/${relativePath}`,
+      url: image.src,
       height: image.height,
       width: image.width
     }

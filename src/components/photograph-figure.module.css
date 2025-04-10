@@ -11,6 +11,8 @@
 .photographFigure img {
   display: block;
   width: 100%;
+  max-height: calc(100vh - 3rem);
+  height: auto;
   object-fit: contain;
 }
 
@@ -23,29 +25,12 @@
   color: var(--foreground-color-muted);
 }
 
-.name a {
-  color: inherit;
-}
-
-.detailSwitcher {
-  font-style: italic;
-  color: var(--foreground-color-muted);
-}
-
-.detailSwitcher span {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.detailSwitcher .active {
-  color: var(--foreground-color);
-}
-
 .link {
   padding-top: 1.5rem;
   color: var(--foreground-color-muted);
 }
 
+.name a,
 .link a {
   color: inherit;
 }

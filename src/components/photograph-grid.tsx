@@ -1,6 +1,14 @@
 import Link from 'next/link'
+import Image, { StaticImageData } from 'next/image'
 import photographs from '../data/photographs'
 import styles from './photograph-grid.module.css'
+
+const Thumbnail = async ({ slug }: { slug: string }) => {
+  const imageModule = await import(`public/images/${slug}.jpg`)
+  const image: StaticImageData = imageModule.default
+
+  return <Image src={image} width={272} quality={40} alt="" />
+}
 
 const PhotographGrid = () => (
   <div className={styles.container}>
@@ -9,10 +17,7 @@ const PhotographGrid = () => (
       .map(photograph => (
         <div className={styles.item} key={photograph.slug}>
           <Link href={`/pictures/${photograph.slug}`}>
-            <img
-              src={`/images/thumbnails/${photograph.slug}.jpg`}
-              alt={`${photograph.title}, ${photograph.year}`}
-            />
+            <Thumbnail slug={photograph.slug} />
           </Link>
         </div>
       ))}

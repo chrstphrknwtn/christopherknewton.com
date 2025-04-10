@@ -2,7 +2,7 @@
 @import url('https://chrstphrknwtn.github.io/eb-garamond/eb-garamond.css');
 
 :root {
-  --rem: 17px;
+  --rem: 16px;
   --base-font-features: 'onum', 'pnum';
   --font-weight-regular: 400;
   --font-weight-bold: 500;
