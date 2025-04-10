@@ -23,7 +23,7 @@ const PhotographFigure = ({ photograph, image }: Props) => {
         <section className={styles.details}>
           {photograph.title}, {photograph.year}.
           <div className={styles.link}>
-            <Link href="/">Index</Link>
+            <Link href="/pictures">Index</Link>
           </div>
         </section>
       </figcaption>
