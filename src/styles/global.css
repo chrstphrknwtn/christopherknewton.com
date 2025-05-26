@@ -4,6 +4,7 @@
 :root {
   --rem: 16px;
   --base-font-features: 'onum', 'pnum';
+  --base-line-height: 1.4;
   --font-weight-regular: 400;
   --font-weight-bold: 500;
   --foreground-color: black;
@@ -29,7 +30,7 @@
 html {
   height: 100%;
   font-size: var(--rem);
-  line-height: 1.57;
+  line-height: var(--base-line-height);
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   font-size: var(--rem);
   font-weight: var(--font-weight-regular);
   font-family: 'EB Garamond', serif;
-  line-height: inherit;
+  line-height: var(--base-line-height);
   background-color: var(--background-color);
   font-feature-settings: var(--base-font-features);
   -webkit-font-smoothing: antialiased;
@@ -114,33 +115,14 @@ strong {
   font-weight: var(--font-weight-bold);
 }
 
-p {
-  margin-bottom: 1rem;
-}
-
-p + p {
-  margin-top: -1rem;
-  text-indent: 1rem;
-}
-
 ol,
 ul {
   margin-bottom: 1rem;
   padding-left: 2rem;
 }
 
-ul {
-  list-style: none;
-}
-
-ul > li {
-  position: relative;
-}
-
-ul > li::before {
-  position: absolute;
-  left: -1rem;
-  content: '·';
+small {
+  font-size: calc(var(--rem) * 0.95);
 }
 
 /* Typography utils */
