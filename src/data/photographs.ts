@@ -26,30 +26,30 @@ const photographs: Array<Photograph> = [
     publish: true,
     publishDate: '2024-07-23',
     year: 2024,
-    slug: '2024-aperture-grille-0',
-    title: 'Aperture Grille 0',
+    slug: '2024-shadow-mask-i',
+    title: 'Shadow Mask I',
     hasDetail: true
   },
   {
     publish: true,
     publishDate: '2024-07-18',
     year: 2024,
-    slug: '2024-aperture-grille-1',
-    title: 'Aperture Grille 1'
+    slug: '2024-shadow-mask-ii',
+    title: 'Shadow Mask II'
   },
   {
     publish: true,
     publishDate: '2024-11-15',
     year: 2024,
-    slug: '2024-aperture-grille-2',
-    title: 'Aperture Grille 2'
+    slug: '2024-shadow-mask-iii',
+    title: 'Shadow Mask III'
   },
   {
     publish: true,
     publishDate: '2024-11-15',
     year: 2024,
-    slug: '2024-aperture-grille-3',
-    title: 'Aperture Grille 3'
+    slug: '2024-shadow-mask-iv',
+    title: 'Shadow Mask IV'
   },
   {
     publish: true,
